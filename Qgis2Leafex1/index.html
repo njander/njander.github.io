@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OLYM Fire Example1</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="css/own_style.css">
+		<link rel="stylesheet" href="css/label.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+		<script src="js/leaflet-hash.js"></script>
+		<script src="js/label.js"></script>
+		<script src="js/Autolinker.min.js"></script>
+	</head>
+	<body>
+		<div id="map"></div>
+		<script src="data/exp_ParadiseFire82015.js"></script>
+		<script src="data/exp_OLYMParkBoundary.js"></script>
+		<script>
+		var map = L.map('map', {
+			zoomControl:true, maxZoom:19
+		}).fitBounds([[47.4195207242,-124.807069269],[48.2160241839,-122.957394167]]);
+		var hash = new L.Hash(map);
+		var additional_attrib = 'created w. <a href="https://github.com/geolicious/qgis2leaf" target ="_blank">qgis2leaf</a> by <a href="http://www.geolicious.de" target ="_blank">Geolicious</a> & contributors<br>';
+		var feature_group = new L.featureGroup([]);
+		var raster_group = new L.LayerGroup([]);
+		var basemap_0 = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', { 
+			attribution: additional_attrib + '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+		});	
+		basemap_0.addTo(map);	
+		var layerOrder=new Array();
+		function pop_OLYMParkBoundary(feature, layer) {					
+			var popupContent = '<table><tr><th scope="row">OBJECTID</th><td>' + Autolinker.link(String(feature.properties['OBJECTID'])) + '</td></tr><tr><th scope="row">UNIT_CODE</th><td>' + Autolinker.link(String(feature.properties['UNIT_CODE'])) + '</td></tr><tr><th scope="row">UNIT_NAME</th><td>' + Autolinker.link(String(feature.properties['UNIT_NAME'])) + '</td></tr><tr><th scope="row">OBJECTID_1</th><td>' + Autolinker.link(String(feature.properties['OBJECTID_1'])) + '</td></tr><tr><th scope="row">Region</th><td>' + Autolinker.link(String(feature.properties['Region'])) + '</td></tr><tr><th scope="row">Park</th><td>' + Autolinker.link(String(feature.properties['Park'])) + '</td></tr><tr><th scope="row">Foundation</th><td>' + Autolinker.link(String(feature.properties['Foundation'])) + '</td></tr><tr><th scope="row">Park_Atlas</th><td>' + Autolinker.link(String(feature.properties['Park_Atlas'])) + '</td></tr><tr><th scope="row">FY_Started</th><td>' + Autolinker.link(String(feature.properties['FY_Started'])) + '</td></tr><tr><th scope="row">FY_Complet</th><td>' + Autolinker.link(String(feature.properties['FY_Complet'])) + '</td></tr><tr><th scope="row">Status</th><td>' + Autolinker.link(String(feature.properties['Status'])) + '</td></tr><tr><th scope="row">Shape_Leng</th><td>' + Autolinker.link(String(feature.properties['Shape_Leng'])) + '</td></tr><tr><th scope="row">Shape_Area</th><td>' + Autolinker.link(String(feature.properties['Shape_Area'])) + '</td></tr></table>';
+			layer.bindPopup(popupContent);
+		}
+
+		function doStyleOLYMParkBoundary(feature) {
+				return {
+					color: '#000000',
+					fillColor: '#1f78b4',
+					weight: 1.3,
+					dashArray: '',
+					opacity: 1.0,
+					fillOpacity: 1.0
+				};
+
+		}
+		var exp_OLYMParkBoundaryJSON = new L.geoJson(exp_OLYMParkBoundary,{
+			onEachFeature: pop_OLYMParkBoundary,
+			style: doStyleOLYMParkBoundary
+		});
+		layerOrder[layerOrder.length] = exp_OLYMParkBoundaryJSON;
+		for (index = 0; index < layerOrder.length; index++) {
+			feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
+		}
+		//add comment sign to hide this layer on the map in the initial view.
+		feature_group.addLayer(exp_OLYMParkBoundaryJSON);
+		function pop_ParadiseFire82015(feature, layer) {					
+			var popupContent = '<table><tr><th scope="row">Name</th><td>' + Autolinker.link(String(feature.properties['Name'])) + '</td></tr><tr><th scope="row">Description</th><td>' + Autolinker.link(String(feature.properties['Description'])) + '</td></tr></table>';
+			layer.bindPopup(popupContent);
+		}
+
+		function doStyleParadiseFire82015(feature) {
+				return {
+					color: '#000000',
+					fillColor: '#e31a1c',
+					weight: 1.3,
+					dashArray: '',
+					opacity: 1.0,
+					fillOpacity: 1.0
+				};
+
+		}
+		var exp_ParadiseFire82015JSON = new L.geoJson(exp_ParadiseFire82015,{
+			onEachFeature: pop_ParadiseFire82015,
+			style: doStyleParadiseFire82015
+		});
+		layerOrder[layerOrder.length] = exp_ParadiseFire82015JSON;
+		for (index = 0; index < layerOrder.length; index++) {
+			feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
+		}
+		//add comment sign to hide this layer on the map in the initial view.
+		feature_group.addLayer(exp_ParadiseFire82015JSON);
+
+		feature_group.addTo(map);
+		var title = new L.Control();
+		title.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+			this.update();
+			return this._div;
+		};
+		title.update = function () {
+			this._div.innerHTML = '<h2>OLYM Fire Example1</h2>A QGIS-to-Leaflet webmap '
+		};
+		title.addTo(map);
+		var legend = L.control({position: 'bottomright'});
+		legend.onAdd = function (map) {
+			var div = L.DomUtil.create('div', 'info legend');
+			div.innerHTML = "<h3>Legend</h3><table></table>";
+    		return div;
+		};
+		legend.addTo(map);
+	var baseMaps = {
+		'Thunderforest Landscape': basemap_0
+	};
+		L.control.layers(baseMaps,{"ParadiseFire82015": exp_ParadiseFire82015JSON,"OLYMParkBoundary": exp_OLYMParkBoundaryJSON},{collapsed:false}).addTo(map);
+		L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
+	</script>
+</body>
+</html>

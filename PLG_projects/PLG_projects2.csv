@@ -1,0 +1,301 @@
+OBJECTID,project_na,match_for_,project__1,topline_co,field_5,topline_pr,field_7,lat_of_top,lon_of_top,park_code,point_x,point_y,status,project_ty,funding_so,cartodb_id,created_at,updated_at,RuleID,RuleID_1,RuleID_2,RuleID_3,RuleID_4,RuleID_5,RuleID_6
+1,,1,RTCA-XXX-State Pages,RTCA,XXX,State Pages,,,,RTCA,#N/A,#N/A,current,Other,Other,233,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+2,BRD Strategic Plan,1,AKRO-XXX-WSR-Alagnak and Aniakchak Rivers,AKRO,XXX,WSR,Alagnak and Aniakchak Rivers,,,AKRO,#N/A,#N/A,current,WSR,Other,4,7/7/2015,7/7/2015,4,4,3,3,3,3,3
+3,EQD Strategic Plan,1,APCO-XXX-Boundary Study - EA,#REF!,,Boundary Study,,,,#REF!,#REF!,#REF!,current,Other,Other,8,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+4,Castillo de San Marcos Foundation,1,BRMD-XXX-Strategic Plan,BRMD,XXX,Strategic Plan,,,,BRMD,#N/A,#N/A,current,Strategic Plan,Other,28,7/7/2015,7/7/2015,9,9,8,8,8,8,8
+5,,1,NCRO-XXX-LRTP,NCRO,XXX,LRTP,,,,NCRO,#N/A,#N/A,current,Transportation,Other,191,7/7/2015,7/7/2015,2,2,1,1,1,1,1
+6,COLM BLM Land Transfer,0,CCRP-XXX-Climate Change Support,CCRP,XXX,Climate Change Support,,,,CCRP,#N/A,#N/A,complete,Other,Other,42,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+7,GRBA Foundation,1,DSCA-167084-Cahokia Recon Study,DSCA,167084,Cahokia Recon Study,,,,DSCA,#N/A,#N/A,current,Other,Other,71,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+8,Moose-Wilson Plan/EIS,1,DSCA-221099-New Philadelphia SRS,DSCA,221099,New Philadelphia SRS,,,,DSCA,#N/A,#N/A,current,SRS,Other,72,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+9,GRSM Foundation Document,0,DSCA-XXX-Collaborative Clinics,DSCA,XXX,Collaborative Clinics,,,,DSCA,#N/A,#N/A,complete,Other,Other,73,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+10,GRTE Land Exchg,0,DSCA-XXX-RSS Program Support,DSCA,XXX,RSS Program Support,,,,DSCA,#N/A,#N/A,complete,RSS,SRS,74,7/7/2015,7/7/2015,8,8,7,7,7,7,7
+11,GUIS GMP,1,DSCP-XXX-Strategic Plan,DSCP,XXX,Strategic Plan,,,,DSCP,#N/A,#N/A,current,Strategic Plan,Other,75,7/7/2015,7/7/2015,9,9,8,8,8,8,8
+12,GUIS Foundation,1,DSCP-XXX-Tennessee - LUM,DSCP,XXX,Tennessee,LUM,,,DSCP,#N/A,#N/A,current,Other,Other,76,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+13,HAFO Foundation,1,EPMT-XXX-Strategic Plan,EPMT,XXX,Strategic Plan,,,,EPMT,#N/A,#N/A,current,Strategic Plan,Other,79,7/7/2015,7/7/2015,9,9,8,8,8,8,8
+14,HALE Foundation,0,EQD-103905-DO 12 Handbook,EQD,103905,DO 12 Handbook,,,,EQD,#N/A,#N/A,complete,Other,Other,80,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+15,HUTR Foundation,0,EQD-155908-Ungulate Management Plan for ANTI-MONO-MANA,EQD,155908,Ungulate Management Plan for ANTI,MONO,MANA,,EQD,#N/A,#N/A,complete,Resource Management Plan,Other,81,7/7/2015,7/7/2015,6,6,5,5,5,5,5
+16,Horseshoe Bend RSS,1,EQD-XXX-Social Science Strategy,EQD,XXX,Social Science Strategy,,,,EQD,#N/A,#N/A,current,Other,Other,82,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+17,,0,USFS-XXX-Interagency Agreement,USFS,XXX,Interagency Agreement,,,,USFS,#N/A,#N/A,complete,Other,Other,272,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+18,OZAR Roads and Trails Management Plan / EA,0,HATU-176042-Foundation Support,HATU,176042,Foundation Support,,,,HATU,#N/A,#N/A,complete,Foundation,UMP,129,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+19,SETP-PINN,0,IAFL-191247D-Foundation Support,IAFL,191247D,Foundation Support,,,,IAFL,#N/A,#N/A,complete,Foundation,UMP,135,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+20,PIRO Wilderness Assessment,0,IMRO-XXX-COLM Land Exchange,IMRO,XXX,COLM Land Exchange,,,,IMRO,#N/A,#N/A,complete,Land Exchange,Other,136,7/7/2015,7/7/2015,5,5,4,4,4,4,4
+21,Pictured Rocks Foundation,0,IMRO-XXX-FY15 Accessible Brochures,IMRO,XXX,FY15 Accessible Brochures,,,,IMRO,#N/A,#N/A,complete,Accessibility,Other,137,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+22,SHBA SRS,0,KLSE-191247D-Foundation Support,KLSE,191247D,Foundation Support,,,,KLSE,#N/A,#N/A,complete,Foundation,UMP,156,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+23,,0,NCRO-XXX-Donahue Detail,NCRO,XXX,Donahue Detail,,,,NCRO,#N/A,#N/A,complete,Other,Other,190,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+24,,0,PPFL-XXX-Transitional Management Assistance Program,PPFL,XXX,Transitional Management Assistance Program,,,,PPFL,#N/A,#N/A,complete,Other,Other,223,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+25,,0,PWRO-XXX-Accessibility Technical Services NLT Dec-2014,PWRO,XXX,Accessibility Technical Services NLT Dec,2014,,,PWRO,#N/A,#N/A,complete,Accessibility,Other,226,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+26,,1,RTCA-XXX-DSC Assistance,RTCA,XXX,DSC Assistance,,,,RTCA,#N/A,#N/A,current,Other,Other,232,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+27,,1,SERO-166497-Fort San Geronimo-SRS,SERO,166497,Fort San Geronimo,SRS,,,SERO,#N/A,#N/A,current,SRS,Other,251,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+28,,1,SERO-166544-Camden Battleground-SRS,SERO,166544,Camden Battleground,SRS,,,SERO,#N/A,#N/A,current,SRS,Other,252,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+29,,1,SERO-XXX-Lower Mississippi SRS,SERO,XXX,Lower Mississippi SRS,,,,SERO,#N/A,#N/A,current,SRS,Other,253,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+30,,0,SERO-XXX-Mill Springs Battlefield-SRS,SERO,XXX,Mill Springs Battlefield,SRS,,,SERO,#N/A,#N/A,complete,SRS,Other,254,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+31,,0,STPA-176042-Foundation Support,STPA,176042,Foundation Support,,,,STPA,#N/A,#N/A,complete,Foundation,UMP,264,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+32,,1,VCNP-XXX-Trails and Transportation Plan and EA,VCNP,XXX,Trails and Transportation Plan and EA,,,,VCNP,#N/A,#N/A,current,"EIS, EA",UMP,277,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+33,,0,WASO-DSCA-Planning SRS Program Support,WASO,DSCA,Planning SRS Program Support,,,,WASO,#N/A,#N/A,complete,SRS,Other,283,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+34,,0,WASO-DSCA-Planning SRS Visitor Services,WASO,DSCA,Planning SRS Visitor Services,,,,WASO,#N/A,#N/A,complete,SRS,Other,284,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+35,,0,WASO-DSCA-Planning UMP FY15 Program Support,WASO,DSCA,Planning UMP FY15 Program Support,,,,WASO,#N/A,#N/A,complete,Other,Other,285,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+36,,0,WASO-XXX-Accessibility Assessments Working Group Facilitation,WASO,XXX,Accessibility Assessments Working Group Facilitation,,,,WASO,#N/A,#N/A,complete,Accessibility,Other,286,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+37,,1,WASO-XXX-Accessibility Program Support,WASO,XXX,Accessibility Program Support,,,,WASO,#N/A,#N/A,current,Accessibility,Other,287,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+38,,1,WASO-XXX-EQD Strategic Plan,WASO,XXX,EQD Strategic Plan,,,,WASO,#N/A,#N/A,current,Strategic Plan,Other,288,7/7/2015,7/7/2015,9,9,8,8,8,8,8
+39,,1,WASO-XXX-NPS System Plan-A002-420,WASO,XXX,NPS System Plan,A002,420,,WASO,#N/A,#N/A,current,Other,Other,289,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+40,,0,WASO-XXX-Rock Creek Feasibilty DCP,WASO,XXX,Rock Creek Feasibilty DCP,,,,WASO,#N/A,#N/A,complete,Other,Other,290,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+41,,0,WASO-XXX-Wilderness Planning Group,WASO,XXX,Wilderness Planning Group,,,,WASO,#N/A,#N/A,complete,Wilderness,Other,291,7/7/2015,7/7/2015,7,7,6,6,6,6,6
+42,ABLI Foundation,1,ABLI-189056-Foundation Document,ABLI,189056,Foundation Document,,,,ABLI,-85.64442062,37.61197573,current,Foundation,UMP,1,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+43,ACAD Foundation,1,ACAD-176042-Foundation Document,ACAD,176042,Foundation Document,,,,ACAD,-68.24410999,44.3507318,current,Foundation,UMP,2,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+44,ACAD Transportation Plan,0,AFBG-176042-Foundation Support,AFBG,176042,Foundation Support,,40.7137893,-74.0019018,AFBG,-74.00432891,40.71454948,complete,Foundation,UMP,3,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+45,RTCA Support,0,AKRO-XXX-WSR-Salmon River,AKRO,XXX,WSR,Salmon River,67.1467443,-159.4596842,AKRO,-159.4596842,67.1467443,complete,WSR,Other,5,7/7/2015,7/7/2015,4,4,3,3,3,3,3
+46,Buffalo Soldiers Theme Study,1,ANJO-189056-Foundation Document,ANJO,189056,Foundation Document,,,,ANJO,-82.8381405,36.15536303,current,Foundation,UMP,6,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+47,Accessibility Working Group,1,APCO-176042-Foundation Document,APCO,176042,Foundation Document,,,,APCO,-78.80089447,37.38274761,current,Foundation,UMP,7,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+48,WASO-XXX-NPS System Plan,0,APPA-176042-Foundation Document,APPA,176042,Foundation Document,,37.365,-80.39,APPA,-80.38107677,37.35175454,complete,Foundation,UMP,9,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+49,ANJO Foundation,0,ASIS-176042-Foundation Support,ASIS,176042,Foundation Support,,38.0862768,-75.2496244,ASIS,-75.24962442,38.03902729,complete,Foundation,UMP,10,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+50,APCO Boundary Study - EA,1,AZRU-188107-Foundation Document,AZRU,188107,Foundation Document,,,,AZRU,-107.9999245,36.83682198,current,Foundation,UMP,11,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+51,APCO Foundation,1,BADL-XXX-Bison Management EA,BADL,XXX,Bison Management EA,,,,BADL,-102.3939451,43.83400223,current,"EIS, EA",UMP,12,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+52,AZRU Foundation,1,BAND-188107-Foundation Document,BAND,188107,Foundation Document,,,,BAND,-106.3055099,35.75757661,current,Foundation,UMP,13,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+53,Badlands NP North Unit Bison Resource Stewardship Plan,1,BIBE-188107-Foundation Document,BIBE,188107,Foundation Document,,,,BIBE,-103.2298542,29.29777692,current,Foundation,UMP,14,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+54,Bandelier Foundation,1,BICA-188107-Foundation Document,BICA,188107,Foundation Document,,,,BICA,-108.0264036,45.28907419,current,Foundation,UMP,15,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+55,BICA FNDN,1,BICY-189056-Foundation Document,BICY,189056,Foundation Document,,,,BICY,-81.08115282,25.97043292,current,Foundation,UMP,16,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+56,Big Bend Foundation,1,BICY-201865-Backcountry Access and Use Plan,BICY,201865,Backcountry Access and Use Plan,,,,BICY,-81.08115282,25.97043292,current,Other,Other,17,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+57,BICY BAP,1,BISC-108773-GMP-EIS,BISC,108773,GMP,EIS,,,BISC,-80.210247,25.49049476,current,"EIS, EA",UMP,18,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+58,BICY Foundation,0,BISC-189056-Foundation Support,BISC,189056,Foundation Support,,,,BISC,-80.210247,25.49049476,complete,Foundation,UMP,19,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+59,BISC GMP,1,BISO-189056-Foundation Document,BISO,189056,Foundation Document,,,,BISO,-84.6651217,36.53466562,current,Foundation,UMP,20,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+60,BISO Foundation,1,BLRI-189056-Foundation Document,BLRI,189056,Foundation Document,,,,BLRI,-81.07056466,36.43649863,current,Foundation,UMP,21,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+61,BLRI Foundation Document,1,BLUE-176042-Foundation Document,BLUE,176042,Foundation Document,,,,BLUE,-80.96082027,37.58996388,current,Foundation,UMP,22,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+62,BLUE Foundation,0,BOAF-176042-Foundation Support,BOAF,176042,Foundation Support,,42.3578592,-71.0624827,BOAF,-71.07064043,42.35789563,complete,Foundation,UMP,23,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+63,Cabrillo Foundation,0,BOHA-176042-Foundation Support,BOHA,176042,Foundation Support,,42.293829,-70.9383647,BOHA,-70.8761789,42.26219884,complete,Foundation,UMP,24,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+64,TAIP-STEA,0,LAKE-192867-RSS,LAKE,192867,RSS,,,,LAKE,-114.6519029,35.71471937,complete,RSS,SRS,162,7/7/2015,7/7/2015,8,8,7,7,7,7,7
+65,CACH Foundation,0,BOST-176042-Foundation Support,BOST,176042,Foundation Support,,42.37525,-71.0565012,BOST,-71.05574367,42.37338267,complete,Foundation,UMP,25,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+66,CANA Foundation,0,BOWA-176042-Foundation Support,BOWA,176042,Foundation Support,,37.1148093,-79.7308068,BOWA,-79.73187418,37.11481335,complete,Foundation,UMP,26,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+67,Cane River NHP foundation,0,BRCR-189056-Foundation Document Incl NATR and TUPE,BRCR,189056,Foundation Document Incl NATR and TUPE,,34.5061074,-88.7288707,BRCR,-88.72889343,34.50611958,complete,Foundation,UMP,27,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+68,CAVE Foundation,0,BRVB-177094D-Foundation Support,BRVB,177094D,Foundation Support,,,,BRVB,-95.67640762,39.03793261,complete,Foundation,UMP,29,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+69,Cedar Breaks Foundation,0,BUIS-XXX-Foundation Document,BUIS,XXX,Foundation Document,,,,BUIS,-64.62221751,17.81026454,complete,Foundation,UMP,30,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+70,CHAM Foundation,1,CABR-191247D-Foundation Document,CABR,191247D,Foundation Document,,,,CABR,-117.2415986,32.67225021,current,Foundation,UMP,31,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+71,Chattahoochee Trace NHA Feasibility Study,1,CACH-188107-Foundation Document,CACH,188107,Foundation Document,,,,CACH,-109.3403857,36.09426325,current,Foundation,UMP,32,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+72,CHCH Foundation,0,CACL-176042-Foundation Support,CACL,176042,Foundation Support,,,,CACL,-74.01680558,40.70347795,complete,Foundation,UMP,33,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+73,CHCH - LOMO,0,CACO-176042-Foundation Support,CACO,176042,Foundation Support,,,,CACO,-70.00526294,41.95905397,complete,Foundation,UMP,34,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+74,CHCH - MOBE,0,CAGR-188107-Foundation Support,CAGR,188107,Foundation Support,,,,CAGR,-111.5325383,32.99702566,complete,Foundation,UMP,35,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+75,CHCU Foundation,1,CANA-189056-Foundation Document,CANA,189056,Foundation Document,,,,CANA,-80.75412332,28.78624732,current,Foundation,UMP,36,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+76,CHIR/CORO/FOBO Foundations,0,CANA-67147-GMP,CANA,67147,GMP,,,,CANA,-80.75412332,28.78624732,complete,GMP,UMP,37,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+77,Channel Islands GMP,0,CARE-188107-Foundation Support,CARE,188107,Foundation Support,,,,CARE,-111.2830036,38.38355284,complete,Foundation,UMP,38,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+78,Channel Island Foundation Support,1,CARI-189056-Foundation Document,CARI,189056,Foundation Document,,,,CARI,-93.00729876,31.66444165,current,Foundation,UMP,39,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+79,C&O Canal/Harpers Ferry Deer Management,1,CASA-189056-Foundation Document,CASA,189056,Foundation Document,,,,CASA,-81.31217173,29.897857,current,Foundation,UMP,40,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+80,CHPI Foundation,1,CAVE-188107-Foundation Document,CAVE,188107,Foundation Document,,,,CAVE,-104.5531363,32.14092525,current,Foundation,UMP,41,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+81,Colorado NM RSS,0,CEBE-176042-Foundation Support,CEBE,176042,Foundation Support,,,,CEBE,-78.31608609,38.9923793,complete,Foundation,UMP,43,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+82,COLO Foundation,1,CEBR-188107-Foundation Document,CEBR,188107,Foundation Document,,,,CEBR,-112.8452681,37.63545088,current,Foundation,UMP,44,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+83,CRLA Foundation,1,CHAM-188107-Foundation Support,CHAM,188107,Foundation Support,,,,CHAM,-106.4544011,31.76729632,current,Foundation,UMP,45,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+84,CUGA Foundation,1,CHAT-166463-Chattahoochee Trace NHA,CHAT,166463,Chattahoochee Trace NHA,,,,CHAT,-84.26676471,33.97241053,current,Other,Other,46,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+85,DEVA Foundation,1,CHCH-176109-GMP Amendment-MOBE,CHCH,176109,GMP Amendment,MOBE,,,CHCH,-85.25401191,34.91896903,current,GMP,UMP,47,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+86,DETO TAIP Project,1,CHCH-189056-Foundation Support,CHCH,189056,Foundation Support,,,,CHCH,-85.25401191,34.91896903,current,Foundation,UMP,48,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+87,DEWA VUM EIS,1,CHCH-68548-GMP Amendment-Lookout Mountain,CHCH,68548,GMP Amendment,Lookout Mountain,,,CHCH,-85.25401191,34.91896903,current,GMP,UMP,49,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+88,DINO Foundation,1,CHCU-188107-Foundation Document,CHCU,188107,Foundation Document,,,,CHCU,-107.9481528,36.04492194,current,Foundation,UMP,50,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+89,EUON - Complete Accessibility SETP,1,CHIR-188107-Foundation Support,CHIR,188107,Foundation Support,,,,CHIR,-109.3416065,32.01214105,current,Foundation,UMP,51,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+90,EVER GMP,1,CHIS-191247D-Foundation Support,CHIS,191247D,Foundation Support,,,,CHIS,-119.7396508,34.01655127,current,Foundation,UMP,52,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+91,EVER FPL,1,CHIS-4214-GMP-WS,CHIS,4214,GMP,WS,,,CHIS,-119.7396508,34.01655127,current,GMP,UMP,53,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+92,FIIS Deer EIS,1,CHOH-XXX-Deer Management Plan Including HAFE,CHOH,XXX,Deer Management Plan Including HAFE,,,,CHOH,-77.94484191,39.5996516,current,Resource Management Plan,Other,54,7/7/2015,7/7/2015,6,6,5,5,5,5,5
+93,FIIS Breach EIS,0,CHOH-XXX-RSS Project,CHOH,XXX,RSS Project,,,,CHOH,-77.94484191,39.5996516,complete,RSS,SRS,55,7/7/2015,7/7/2015,8,8,7,7,7,7,7
+94,Fort Matanzas NM Foundation,1,CHPI-189056-Foundation Document,CHPI,189056,Foundation Document,,,,CHPI,-79.82487582,32.84577391,current,Foundation,UMP,56,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+95,FOMC-HAMP Foundation,0,CHRI-189056C-Foundation Document,CHRI,189056C,Foundation Document,,,,CHRI,-64.73996534,17.73405572,complete,Foundation,UMP,57,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+96,Fort Monroe Foundation Document,1,COLM-XXX-BLM Land Transfer,COLM,XXX,BLM Land Transfer,,,,COLM,-108.6920609,39.05042535,current,Land Exchange,Other,58,7/7/2015,7/7/2015,5,5,4,4,4,4,4
+97,FOPU Foundation,1,COLM-XXX-RSS Project,COLM,XXX,RSS Project,,,,COLM,-108.6920609,39.05042535,current,RSS,SRS,59,7/7/2015,7/7/2015,8,8,7,7,7,7,7
+98,FOSC Foundation,1,COLO-176042F-Foundation Document,COLO,176042F,Foundation Document,,,,COLO,-76.63422124,37.28808948,current,Foundation,UMP,60,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+99,FOSU  Foundation,1,CORO-188107-Foundation Document includes FOBO and CHIR,CORO,188107,Foundation Document includes FOBO and CHIR,,,,CORO,-110.2561572,31.34900273,current,Foundation,UMP,61,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+100,FOVA Foundation,1,CRLA-191247D-Foundation Document,CRLA,191247D,Foundation Document,,,,CRLA,-122.1338425,42.94049822,current,Foundation,UMP,62,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+101,GAAR GMP,0,CRLA-XXX-Trails Plan Editing,CRLA,XXX,Trails Plan Editing,,,,CRLA,-122.1338425,42.94049822,complete,Other,Other,63,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+102,GARI Foundation,1,CUGA-189056-Foundation Document,CUGA,189056,Foundation Document,,,,CUGA,-83.60635656,36.63126384,current,Foundation,UMP,64,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+103,GATE Camping Planning/Design,0,DESO-189056-Foundation Support,DESO,189056,Foundation Support,,,,DESO,-82.64335416,27.52272611,complete,Foundation,UMP,65,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+104,GETT - EISE Foundation,1,DETO-XXX-Visitor Center Area - TAIP,DETO,XXX,Visitor Center Area,TAIP,,,DETO,-104.7156342,44.59064562,current,Accessibility,Other,66,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+105,GLAC Foundation,1,DEVA-191247D-Foundation Document,DEVA,191247D,Foundation Document,,,,DEVA,-117.1326278,36.48393063,current,Foundation,UMP,67,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+106,GLBA Bartlett Cove Management Plan,0,DEWA-176042-Foundation Document,DEWA,176042,Foundation Document,,,,DEWA,-74.95693004,41.10031635,complete,Foundation,UMP,68,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+107,GOGA RSS,1,DEWA-201250-Visitor Use Management Plan,DEWA,201250,Visitor Use Management Plan,,,,DEWA,-74.95693004,41.10031635,current,VUM,Other,69,7/7/2015,7/7/2015,3,3,2,2,2,2,2
+108,GOGA Foundation,1,DINO-188107-Foundation Document,DINO,188107,Foundation Document,,,,DINO,-108.937702,40.50596538,current,Foundation,UMP,70,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+109,GUMO Foundation,0,EISE-176042-Foundation Support,EISE,176042,Foundation Support,,,,EISE,-77.26508102,39.79577487,complete,Foundation,UMP,77,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+110,HAFE Foundation,0,ELRO-176042-Foundation Support,ELRO,176042,Foundation Support,,,,ELRO,-73.89687748,41.76086389,complete,Foundation,UMP,78,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+111,TAIP-INDE,0,EUON-174231-Accessibility SETP,EUON,174231,Accessibility SETP,,,,EUON,-122.0271566,37.82604456,complete,Accessibility,Other,83,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+112,INDU Foundation,1,EUON-174231-Complete Accessibility SETP,EUON,174231,Complete Accessibility SETP,,,,EUON,-122.0271566,37.82604456,current,Accessibility,Other,84,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+113,Invasive Plant Program Strategic Plan,0,EVER-189056-Foundation Support,EVER,189056,Foundation Support,,,,EVER,-80.88182401,25.37216762,complete,Foundation,UMP,85,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+114,ISRO CRMP,1,EVER-78991-GMP,EVER,78991,GMP,,,,EVER,-80.88182401,25.37216762,current,GMP,UMP,86,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+115,ISRO WSP/CRMP/Wolf Moose Coordination,1,EVER-XXX-NPS_FPL Potential Land Acquisition EIS,EVER,XXX,NPS_FPL Potential Land Acquisition EIS,,,,EVER,-80.88182401,25.37216762,current,"EIS, EA",UMP,87,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+116,New Orleans JAZZ NHP,0,FEHA-176042-Foundation Support,FEHA,176042,Foundation Support,,,,FEHA,-74.01025636,40.70731192,complete,Foundation,UMP,88,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+117,JELA/JAZZ Strategic Plan,1,FIIS-106234-Veg-Deer Mgmt Plan EIS,FIIS,106234,Veg,Deer Mgmt Plan EIS,,,FIIS,-72.99435226,40.69182965,current,"EIS, EA",UMP,89,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+118,Jean Lafitte NHP and Preserve Foundation,0,FIIS-XXX-Breach EIS,FIIS,XXX,Breach EIS,,,,FIIS,-72.99435226,40.69182965,complete,"EIS, EA",UMP,90,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+119,JOMU-SETP,1,FOBO-188107-Foundation Support,FOBO,188107,Foundation Support,,,,FOBO,-109.4511317,32.14925916,current,Foundation,UMP,91,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+120,Alagnak and Aniakchak Wild Rivers,0,FOFR-189056-Foundation Document,FOFR,189056,Foundation Document,,,,FOFR,-81.38984256,31.22355511,complete,Foundation,UMP,92,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+121,KELI - NHA Feasibility Study,0,FOLA-188107-Foundation Support,FOLA,188107,Foundation Support,,,,FOLA,-104.5459193,42.20302502,complete,Foundation,UMP,93,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+122,KLGO-TAIP,1,FOMA-189056-Foundation Document,FOMA,189056,Foundation Document,,,,FOMA,-81.23866231,29.71140527,current,Foundation,UMP,94,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+123,KNRI ARMP,1,FOMC-176042F-Foundation Document,FOMC,176042F,Foundation Document,,,,FOMC,-76.58044164,39.26395311,current,Foundation,UMP,95,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+124,LABE - Complete Accessibility SETP,1,FOMR-176042A-Foundation Document,FOMR,176042A,Foundation Document,,,,FOMR,-76.307333,37.003933,current,Foundation,UMP,96,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+125,LACL GMP Presentation Plan,1,FOPU-189056-Foundation Document,FOPU,189056,Foundation Document,,,,FOPU,-80.94362859,32.03477743,current,Foundation,UMP,97,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+126,Foundation - Lake Mead National Recreation Area,1,FOSC-177094D-Foundation Document,FOSC,177094D,Foundation Document,,,,FOSC,-94.70429174,37.84358848,current,Foundation,UMP,98,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+127,Lake Mead EISs Assistance,0,FOSM-177094D-Foundation Support,FOSM,177094D,Foundation Support,,,,FOSM,-94.43130219,35.38837825,complete,Foundation,UMP,99,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+128,LARO,0,FOSU-189056-Foundation Document,FOSU,189056,Foundation Document,,,,FOSU,-79.87933364,32.75359427,complete,Foundation,UMP,100,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+129,Lassen Volcanic NP Foundation,1,FOVA-191247-Foundation Document,FOVA,191247,Foundation Document,,,,FOVA,-122.6616376,45.62356027,current,Foundation,UMP,101,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+130,Lewis and Clark NHP Foundation,0,FRLA-176042-Foundation Support,FRLA,176042,Foundation Support,,,,FRLA,-71.13112957,42.32550867,complete,Foundation,UMP,102,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+131,LIBI GMP amendment,0,FRSP-176042-Foundation Support,FRSP,176042,Foundation Support,,,,FRSP,-77.74075318,38.30309032,complete,Foundation,UMP,103,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+132,LIHO Foundation,1,GAAR-152485-GMP,GAAR,152485,GMP,,,,GAAR,-153.3869032,67.86900574,current,GMP,UMP,104,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+133,LIRI Foundation,1,GARI-176042-Foundation Document,GARI,176042,Foundation Document,,,,GARI,-81.004202,38.206142,current,Foundation,UMP,105,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+134,SERO - Lower Miss SRS,1,GATE-180868-Urban Camping Planning and Design,GATE,180868,Urban Camping Planning and Design,,,,GATE,-73.86104473,40.6185497,current,Other,Other,106,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+135,MACA-TAIP Echo Trail,0,GEGR-176042-Foundation Support,GEGR,176042,Foundation Support,,,,GEGR,-73.96307567,40.81343436,complete,Foundation,UMP,107,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+136,MANA Foundation,1,GETT-176042-Foundation Document Includes EISE,GETT,176042,Foundation Document Includes EISE,,,,GETT,-77.23841528,39.8045411,current,Foundation,UMP,108,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+137,Mesa Verde National Park Foundation Document,0,GICL-188107-Foundation Support,GICL,188107,Foundation Support,,,,GICL,-108.2732958,33.22760971,complete,Foundation,UMP,109,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+138,MIIN Foundation,1,GLAC-188107-Foundation Document and Strategic Plan,GLAC,188107,Foundation Document and Strategic Plan,,,,GLAC,-113.8587463,48.74679601,current,Foundation,UMP,110,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+139,MONO Foundation,0,GLAC-XXX-Strategic Plan,GLAC,XXX,Strategic Plan,,,,GLAC,-113.8587463,48.74679601,complete,Strategic Plan,Other,111,7/7/2015,7/7/2015,9,9,8,8,8,8,8
+140,MORR Deer/Veg EIS,1,GLBA-194848-Visitor Use Management Plan,GLBA,194848,Visitor Use Management Plan,,,,GLBA,-136.8109294,58.79143942,current,VUM,Other,112,7/7/2015,7/7/2015,3,3,2,2,2,2,2
+141,MWR LRTP,0,GLCA-XXX-Quagga Mussel Extended Response Planning Assistance,GLCA,XXX,Quagga Mussel Extended Response Planning Assistance,,,,GLCA,-110.8021276,37.39766815,complete,Accessibility,Other,113,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+142,New Philadelphia SRS,1,GOGA-191247D-Foundation Support,GOGA,191247D,Foundation Support,,,,GOGA,-122.551466,37.86264191,current,Foundation,UMP,114,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+143,Cahokia Recon Study,1,GOGA-XXX-RSS Project,GOGA,XXX,RSS Project,,,,GOGA,-122.551466,37.86264191,current,RSS,SRS,115,7/7/2015,7/7/2015,8,8,7,7,7,7,7
+144,NACE Foundation,1,GRBA-191247D-Foundation Document,GRBA,191247D,Foundation Document,,,,GRBA,-114.2579658,38.9460953,current,Foundation,UMP,116,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+145,NAMA Foundation,1,GRSM-189056-Foundation Document,GRSM,189056,Foundation Document,,,,GRSM,-83.52627532,35.60927471,current,Foundation,UMP,117,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+146,NAVA Foundation,1,GRTE-189573-DSCT-Moose-Wilson Cor Mgmt Plan-EIS,GRTE,189573,DSCT,Moose,Wilson Cor Mgmt Plan,EIS,GRTE,-110.7054877,43.81816011,current,"EIS, EA",UMP,118,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+147,Social Science Strategy,1,GRTE-XXX-Land Exchange,GRTE,XXX,Land Exchange,,,,GRTE,-110.7054877,43.81816011,current,Land Exchange,Other,119,7/7/2015,7/7/2015,5,5,4,4,4,4,4
+148,NCR LRTP,1,GUIS-189056-Foundation Document,GUIS,189056,Foundation Document,,,,GUIS,-86.90996505,30.37306335,current,Foundation,UMP,120,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+149,NEPE and BIHO Foundation,1,GUIS-71363-GMP EIS,GUIS,71363,GMP EIS,,,,GUIS,-86.90996505,30.37306335,current,"EIS, EA",UMP,121,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+150,NERI Foundation Addendum,1,GUMO-XXX-Foundation Document,GUMO,XXX,Foundation Document,,,,GUMO,-104.8843561,31.92334952,current,Foundation,UMP,122,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+151,NICO Foundation Support,0,GWCA-177094D-Foundation Support,GWCA,177094D,Foundation Support,,,,GWCA,-94.35522735,36.98713203,complete,Foundation,UMP,123,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+152,OBRI Foundation,0,GWMP-178604-Foundation Document,GWMP,178604,Foundation Document,,,,GWMP,-77.04954861,38.71498629,complete,Foundation,UMP,124,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+153,ORCA foundation,1,HAFE-178604H-Foundation Documents,HAFE,178604H,Foundation Documents,,,,HAFE,-77.74195536,39.31286155,current,Foundation,UMP,125,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+154,ORCA SETP,1,HAFO-191247D-Foundation Document,HAFO,191247D,Foundation Document,,,,HAFO,-114.9539989,42.77557327,current,Foundation,UMP,126,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+155,ORPI Foundation Document,1,HALE-191247-Foundation Document,HALE,191247,Foundation Document,,,,HALE,-156.1485713,20.70728294,current,Foundation,UMP,127,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+156,TN LUM (NCWMA OSM),1,HAMP-176042-Foundation Support,HAMP,176042,Foundation Support,,,,HAMP,-76.58821007,39.41660872,current,Foundation,UMP,128,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+157,OZAR Foundation,1,HOBE-XXX-RSS Project,HOBE,XXX,RSS Project,,,,HOBE,-85.73413618,32.97668769,current,RSS,SRS,130,7/7/2015,7/7/2015,8,8,7,7,7,7,7
+158,OZAR GMP/EIS,0,HOFR-176042-Foundation Support,HOFR,176042,Foundation Support,,,,HOFR,-73.92671769,41.76804119,complete,Foundation,UMP,131,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+159,Padre Island Foundation,0,HOME-177094D-Foundation Support,HOME,177094D,Foundation Support,,,,HOME,-96.83392498,40.28799999,complete,Foundation,UMP,132,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+160,Parashant NM Foundation,0,HSTR-177094D-Foundation Support,HSTR,177094D,Foundation Support,,,,HSTR,-94.53066282,38.90127496,complete,Foundation,UMP,133,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+161,PEFO Foundation,1,HUTR-188107-Foundation Document,HUTR,188107,Foundation Document,,,,HUTR,-109.5599516,35.70727316,current,Foundation,UMP,134,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+162,Pipe Spring NM Foundation,1,INDE-XXX-Independence Square-TAIP,INDE,XXX,Independence Square,TAIP,,,INDE,-75.14692521,39.9453737,current,Accessibility,Other,138,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+163,POHE route marking and graphic identity guidelines,1,INDU-177094D-Foundation Document,INDU,177094D,Foundation Document,,,,INDU,-87.03251532,41.66139849,current,Foundation,UMP,139,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+164,PORE SETP,0,ISRO-177094D-Foundation Support,ISRO,177094D,Foundation Support,,,,ISRO,-88.82842252,48.01095485,complete,Foundation,UMP,140,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+165,REDW Foundation,1,ISRO-62827-Cultural Resource Management Plan-CRMP,ISRO,62827,Cultural Resource Management Plan,CRMP,,,ISRO,-88.82842252,48.01095485,current,Resource Management Plan,Other,141,7/7/2015,7/7/2015,6,6,5,5,5,5,5
+166,PUHO and KAHO Foundations,0,ISRO-XXX-Ungulate Management Plan,ISRO,XXX,Ungulate Management Plan,,,,ISRO,-88.82842252,48.01095485,complete,Resource Management Plan,Other,142,7/7/2015,7/7/2015,6,6,5,5,5,5,5
+167,REDW Condor Reintroduction,1,ISRO-XXX-WBMP Assistance and Coordination,ISRO,XXX,WBMP Assistance and Coordination,,,,ISRO,-88.82842252,48.01095485,current,Other,Other,143,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+168,REDW-SETP,0,JAGA-177094D-Foundation Support,JAGA,177094D,Foundation Support,,,,JAGA,-81.35086557,41.66486548,complete,Foundation,UMP,144,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+169,Rio Grande Foundation,0,JAZZ-189056-Foundation Document,JAZZ,189056,Foundation Document,,,,JAZZ,-90.06103759,29.9587979,complete,Foundation,UMP,145,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+170,Rock Creek Park Foundation,0,JECA-177094D-Foundation Support,JECA,177094D,Foundation Support,,,,JECA,-103.829994,43.7310286,complete,Foundation,UMP,146,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+171,Rock Creek Park DCP,1,JELA-189056-Foundation Document,JELA,189056,Foundation Document,,,,JELA,-90.14721028,29.81916125,current,Foundation,UMP,147,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+172,RORI-SETP,1,JELA-XXX-Strategic Plan,JELA,XXX,Strategic Plan,,,,JELA,-90.14721028,29.81916125,current,Strategic Plan,Other,148,7/7/2015,7/7/2015,9,9,8,8,8,8,8
+173,SAAN Foundation,0,JOFI-176042-Foundation Support,JOFI,176042,Foundation Support,,,,JOFI,-71.12323846,42.34693694,complete,Foundation,UMP,149,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+174,SAND Foundation,0,JOMU-191247-Foundation Support,JOMU,191247,Foundation Support,,,,JOMU,-122.13266,37.98263441,complete,Foundation,UMP,150,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+175,SAND General management plan,1,JOMU-XXX-SETP,JOMU,XXX,SETP,,,,JOMU,-122.13266,37.98263441,current,Accessibility,Other,151,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+176,SARA TAIP,0,JOTR-191247D-Foundation Support,JOTR,191247D,Foundation Support,,,,JOTR,-115.8601108,33.82705237,complete,Foundation,UMP,152,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+177,Sequoia and Kings Canyon foundation,1,KELI-146731-NHA-Feasibility Study,KELI,146731,NHA,Feasibility Study,,,KELI,-85.735905,37.530895,current,Other,Other,153,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+178,1,0,KEWE-177094D-Foundation Support,KEWE,177094D,Foundation Support,,,,KEWE,-88.56870596,47.13815614,complete,Foundation,UMP,154,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+179,Fort San Geronimo SRS,1,KLGO-XXX-Skagway Historic District - TAIP,KLGO,XXX,Skagway Historic District,TAIP,,,KLGO,-135.2926367,59.63158703,current,Other,Other,155,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+180,SHEN CWD EA,1,KNRI-171326-Resource Protection Plan,KNRI,171326,Resource Protection Plan,,,,KNRI,-101.3920156,47.36850054,current,Resource Management Plan,Other,157,7/7/2015,7/7/2015,6,6,5,5,5,5,5
+181,SHEN Foundation,0,LABE-174231-Accessiblity Transition Plan includes TULE,LABE,174231,Accessiblity Transition Plan includes TULE,,,,LABE,-121.5178032,41.75872643,complete,Accessibility,Other,158,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+182,SHIL Foundation,1,LABE-174231-Complete Accessibility SETP,LABE,174231,Complete Accessibility SETP,,,,LABE,-121.5178032,41.75872643,current,Accessibility,Other,159,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+183,SLBE Wilderness Basics,1,LACL-147576-GMP Amendment,LACL,147576,GMP Amendment,,,,LACL,-153.2488147,60.5472857,current,GMP,UMP,160,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+184,TAIP-SLBE,1,LAKE-191247B-Foundation Document,LAKE,191247B,Foundation Document,,,,LAKE,-114.6519029,35.71471937,current,Foundation,UMP,161,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+185,FLAG Foundations,1,LAME-4935-Wilderness-EA,LAME,4935,Wilderness,EA,,,LAKE,-114.6519029,35.71471937,current,Wilderness,Other,163,7/7/2015,7/7/2015,7,7,6,6,6,6,6
+186,Tuskegee Airman NHA Foundation,1,LARO-191247D-Foundation Document,LARO,191247D,Foundation Document,,,,LARO,-118.7214019,47.90899127,current,Foundation,UMP,164,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+187,Tuskegee Institute NHS Foundation,1,LAVO-191247D-Foundation Document,LAVO,191247D,Foundation Document,,,,LAVO,-121.4072048,40.49378739,current,Foundation,UMP,165,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+188,TULE - Complete Accessibility SETP,1,LEWI-191247D-Foundation Document,LEWI,191247D,Foundation Document,,,,LEWI,-124.0676324,46.28618254,current,Foundation,UMP,166,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+189,ULSG Foundation,1,LIBI-178681-GMP Amendment,LIBI,178681,GMP Amendment,,,,LIBI,-107.4286363,45.56505379,current,GMP,UMP,167,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+190,VALL Trails and Transportation,1,LIHO-177094D-Foundation Support,LIHO,177094D,Foundation Support,,,,LIHO,-89.64513397,39.79715641,current,Foundation,UMP,168,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+191,VICR Foundation,1,LIRI-189056-Foundation Support,LIRI,189056,Foundation Support,,,,LIRI,-85.59724642,34.4519056,current,Foundation,UMP,169,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+192,VIIS Foundation,0,LOWE-176042-Foundation Support,LOWE,176042,Foundation Support,,,,LOWE,-71.33094285,42.64646573,complete,Foundation,UMP,170,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+193,VOYA Foundation,0,LYJO-188107-Foundation Document,LYJO,188107,Foundation Document,,,,LYJO,-98.62166112,30.25032439,complete,Foundation,UMP,171,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+194,Washita Foundation,1,MACA-XXX-Echo Trail-TAIP,MACA,XXX,Echo Trail,TAIP,,,MACA,-86.13089476,37.19758047,current,Accessibility,Other,172,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+195,WASO AXS Program Development,0,MALU-189056-Foundation Support,MALU,189056,Foundation Support,,,,MALU,-84.3716933,33.75492007,complete,Foundation,UMP,173,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+196,WHIS Accessibility SETP,1,MANA-178604G-Foundation Document,MANA,178604G,Foundation Document,,,,MANA,-77.53003926,38.82077103,current,Foundation,UMP,174,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+197,WHMI Foundation,0,MANZ-191247-Foundation Support,MANZ,191247,Foundation Support,,,,MANZ,-118.1547178,36.72559147,complete,Foundation,UMP,175,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+198,WHSA Foundation Document,0,MAVA-176042-Foundation Support,MAVA,176042,Foundation Support,,,,MAVA,-73.71529506,42.36666376,complete,Foundation,UMP,176,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+199,Wright Brothers National Memorial,1,MEVE-188107-Foundation Document,MEVE,188107,Foundation Document,,,,MEVE,-108.5009289,37.22348339,current,Foundation,UMP,177,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+200,YOSE Wilderness Basics,1,MIIN-191247D-Foundation Document,MIIN,191247D,Foundation Document,,,,MIIN,-114.2449294,42.68068468,current,Foundation,UMP,178,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+201,Yucca House NM Foundation,0,MISS-177094D-Foundation Support,MISS,177094D,Foundation Support,,,,MISS,-92.93011156,44.77223486,complete,Foundation,UMP,179,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+202,ZION collaboration clinic,1,MONO-178604H-Foundation Documents,MONO,178604H,Foundation Documents,,,,MONO,-77.40246951,39.35769765,current,Foundation,UMP,180,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+203,,0,MORA-191247-Foundation Support,MORA,191247,Foundation Support,,,,MORA,-121.7043729,46.86060444,complete,Foundation,UMP,181,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+204,DEWA VUM EIS,1,MORR-138585-Veg-Deer Mgmt Plan EIS,MORR,138585,Veg,Deer Mgmt Plan EIS,,,MORR,-74.53749376,40.76780365,current,"EIS, EA",UMP,182,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+205,Climate Change Response Program Assistance,0,MORU-177094D-Foundation Support,MORU,177094D,Foundation Support,,,,MORU,-103.4525188,43.88036924,complete,Foundation,UMP,183,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+206,DSC Strategic Plan,0,MUWO-XXX-Transportation,MUWO,XXX,Transportation,,,,MUWO,-122.583964,37.89846858,complete,Transportation,Other,184,7/7/2015,7/7/2015,2,2,1,1,1,1,1
+207,Battle of Camden,1,NACE-178604-Foundation Document,NACE,178604,Foundation Document,,,,NACE,-76.94934656,38.87756927,current,Foundation,UMP,185,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+208,,0,NAMA-107834-Penn Ave Plan,NAMA,107834,Penn Ave Plan,,,,NAMA,-77.022998,38.889633,complete,Other,Other,186,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+209,Southern Campaign,1,NAMA-178604-Foundation Document,NAMA,178604,Foundation Document,,,,NAMA,-77.022998,38.889633,current,Foundation,UMP,187,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+210,,0,NAMA-XXX-Thomas Jefferson Memorial-TAIP,NAMA,XXX,Thomas Jefferson Memorial,TAIP,,,NAMA,-77.022998,38.889633,complete,Accessibility,Other,188,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+211,,1,NAVA-188107-Foundation Document,NAVA,188107,Foundation Document,,,,NAVA,-110.5362565,36.68549118,current,Foundation,UMP,189,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+212,,1,NEPE-191247D-Foundation Document,NEPE,191247D,Foundation Document,,,,NEPE,-116.278022,45.79427929,current,Foundation,UMP,192,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+213,,1,NERI-176042-Foundation Document,NERI,176042,Foundation Document,,,,NERI,-80.98970436,37.84026469,current,Foundation,UMP,193,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+214,,1,NICO-177094D-Foundation Support,NICO,177094D,Foundation Support,,,,NICO,-99.61787258,39.39038861,current,Foundation,UMP,194,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+215,,0,NIOB-XXX-Foundation Support,NIOB,XXX,Foundation Support,,,,NIOB,-99.63194158,42.72586213,complete,Foundation,UMP,195,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+216,,0,NISI-189056-Foundation Support,NISI,189056,Foundation Support,,,,NISI,-82.01636093,34.1427351,complete,Foundation,UMP,196,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+217,,1,OBRI-189056-Foundation Document,OBRI,189056,Foundation Document,,,,OBRI,-84.72244778,36.08458016,current,Foundation,UMP,197,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+218,,0,OLYM-191247D-Foundation Support,OLYM,191247D,Foundation Support,,,,OLYM,-123.6193314,47.79390021,complete,Foundation,UMP,198,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+219,,1,ORCA-191247D-Foundation Documents,ORCA,191247D,Foundation Documents,,,,ORCA,-123.4036664,42.09526677,current,Foundation,UMP,199,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+220,,1,ORCA-214149A-SETP,ORCA,214149A,SETP,,,,ORCA,-123.4036664,42.09526677,current,Accessibility,Other,200,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+221,,1,ORPI-XXX-Foundation Document,ORPI,XXX,Foundation Document,,,,ORPI,-112.8572827,32.03570575,current,Foundation,UMP,201,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+222,,1,OZAR-177094C-Foundation Document,OZAR,177094C,Foundation Document,,,,OZAR,-91.19602596,37.14716237,current,Foundation,UMP,202,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+223,,1,OZAR-213476-Roads and Trails Plan,OZAR,213476,Roads and Trails Plan,,,,OZAR,-91.19602596,37.14716237,current,Other,Other,203,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+224,,1,OZAR-97321-GMP,OZAR,97321,GMP,,,,OZAR,-91.19602596,37.14716237,current,GMP,UMP,204,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+225,,0,PAGR-176042F-Foundation Support,PAGR,176042F,Foundation Support,,,,PAGR,-74.18128435,40.91615017,complete,Foundation,UMP,205,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+226,,1,PAIS-188107-Foundation Document,PAIS,188107,Foundation Document,,,,PAIS,-97.34068068,26.70366538,current,Foundation,UMP,206,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+227,,1,PARA-191247D-Foundation Document,PARA,191247D,Foundation Document,,,,PARA,-113.669094,36.307331,current,Foundation,UMP,207,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+228,,0,PECO-188107-Foundation Support,PECO,188107,Foundation Support,,,,PECO,-105.690831,35.54978457,complete,Foundation,UMP,208,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+229,,1,PEFO-188107-Foundation Document,PEFO,188107,Foundation Document,,,,PEFO,-109.6747177,34.98864305,current,Foundation,UMP,209,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+230,,0,PERI-177094D-Foundation Support,PERI,177094D,Foundation Support,,,,PERI,-94.03444521,36.45477996,complete,Foundation,UMP,210,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+231,,0,PETE-176042-Foundation Support,PETE,176042,Foundation Support,,,,PETE,-77.36301724,37.22799503,complete,Foundation,UMP,211,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+232,,0,PETR-188107-Foundation Support,PETR,188107,Foundation Support,,,,PETR,-106.7522431,35.13426644,complete,Foundation,UMP,212,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+233,,0,PINN-191247D-Foundation Support,PINN,191247D,Foundation Support,,,,PINN,-121.1809924,36.49021462,complete,Foundation,UMP,213,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+234,,1,PINN-214149A-SETP,PINN,214149A,SETP,,,,PINN,-121.1809924,36.49021462,current,Accessibility,Other,214,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+235,,0,PIPE-177094D-Foundation Support,PIPE,177094D,Foundation Support,,,,PIPE,-96.32475523,44.01351938,complete,Foundation,UMP,215,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+236,,1,PIRO-177094D-Foundation Document,PIRO,177094D,Foundation Document,,,,PIRO,-86.46694927,46.51352837,current,Foundation,UMP,216,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+237,,1,PIRO-XXX-Wilderness Character Assessment,PIRO,XXX,Wilderness Character Assessment,,,,PIRO,-86.46694927,46.51352837,current,Wilderness,Other,217,7/7/2015,7/7/2015,7,7,6,6,6,6,6
+238,,1,PISP-188107-Foundation Document,PISP,188107,Foundation Document,,,,PISP,-112.7398567,36.86282664,current,Foundation,UMP,218,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+239,,0,POCH-191247D-Foundation Support,POCH,191247D,Foundation Support,,,,POCH,-122.0263443,38.05674362,complete,Foundation,UMP,219,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+240,,0,POHE-178604H-Foundation Document,POHE,178604H,Foundation Document,,,,POHE,-77.136716,38.950724,complete,Foundation,UMP,220,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+241,,1,POHE-184069-Route Marking and Graphic Identity Guidelines,POHE,184069,Route Marking and Graphic Identity Guidelines,,,,POHE,-77.136716,38.950724,current,Other,Other,221,7/7/2015,7/7/2015,13,13,12,12,12,12,12
+242,,1,PORE-174231-Complete SETP,PORE,174231,Complete SETP,,,,PORE,-122.8797044,38.05500555,current,Accessibility,Other,222,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+243,,0,VAFO-176042-Foundation Support,VAFO,176042,Foundation Support,,,,VAFO,-75.44574105,40.10061168,complete,Foundation,UMP,273,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+244,,0,PUHO-191247D-Foundation Support,PUHO,191247D,Foundation Support,,,,PUHO,-155.8996777,19.40903135,complete,Foundation,UMP,224,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+245,,1,PUHO-KAHO-191247D-Foundation Documents,PUHO,KAHO,191247D,Foundation Documents,,,PUHO,-155.8996777,19.40903135,current,Foundation,UMP,225,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+246,,1,REDW-174231-Accessibility Transition Planning,REDW,174231,Accessibility Transition Planning,,,,REDW,-124.0316551,41.37133097,current,Accessibility,Other,227,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+247,,1,REDW-191247D-Foundation Documents,REDW,191247D,Foundation Documents,,,,REDW,-124.0316551,41.37133097,current,Foundation,UMP,228,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+248,,1,RIGR-188107-Foundation Document,RIGR,188107,Foundation Document,,,,RIGR,-102.5289706,29.75755733,current,Foundation,UMP,229,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+249,,1,ROCR-178604F-Foundation Documents,ROCR,178604F,Foundation Documents,,,,ROCR,-77.04605847,38.96274064,current,Foundation,UMP,230,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+250,,1,RORI-XXX-SETP,RORI,XXX,SETP,,,,RORI,-122.366535,37.9086682,current,Accessibility,Other,231,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+251,,0,RUCA-189056-Foundation Support,RUCA,189056,Foundation Support,,,,RUCA,-85.81858648,34.97083923,complete,Foundation,UMP,234,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+252,,1,SAAN-188107-Foundation Document,SAAN,188107,Foundation Document,,,,SAAN,-98.45388562,29.33200968,current,Foundation,UMP,235,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+253,,0,SACN-177094D-Foundation Support,SACN,177094D,Foundation Support,,,,SACN,-91.57848434,45.98021519,complete,Foundation,UMP,236,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+254,,0,SACR-XXX-Foundation Document,SACR,XXX,Foundation Document,,,,SACR,-67.13302086,45.12801161,complete,Foundation,UMP,237,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+255,,0,SAFR-191247D-Foundation Support,SAFR,191247D,Foundation Support,,,,SAFR,-122.4244247,37.81006647,complete,Foundation,UMP,238,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+256,,0,SAFR-214149A-SETP,SAFR,214149A,SETP,,,,SAFR,-122.4244247,37.81006647,complete,Accessibility,Other,239,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+257,,0,SAFR-XXX-Balclutha - TAIP,SAFR,XXX,Balclutha,TAIP,,,SAFR,-122.4244247,37.81006647,complete,Accessibility,Other,240,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+258,,0,SAGA-176042-Foundation Support,SAGA,176042,Foundation Support,,,,SAGA,-72.37403165,43.50046879,complete,Foundation,UMP,241,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+259,,0,SAHI-176042-Foundation Support,SAHI,176042,Foundation Support,,,,SAHI,-73.49668653,40.88557279,complete,Foundation,UMP,242,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+260,,1,SAND-108787-GMP-Sand Creek,SAND,108787,GMP,Sand Creek,,,SAND,-102.5169514,38.56413439,current,GMP,UMP,243,7/7/2015,7/7/2015,11,11,10,10,10,10,10
+261,,1,SAND-188107-Foundation Document,SAND,188107,Foundation Document,,,,SAND,-102.5169514,38.56413439,current,Foundation,UMP,244,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+262,,0,SARA-176042-Foundation Support,SARA,176042,Foundation Support,,,,SARA,-73.63267353,42.994391,complete,Foundation,UMP,245,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+263,,1,SARA-XXX-Self Guided Tour Road-TAIP,SARA,XXX,Self Guided Tour Road,TAIP,,,SARA,-73.63267353,42.994391,current,Accessibility,Other,246,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+264,,0,SARI-189056-Foundation Document,SARI,189056,Foundation Document,,,,SARI,-64.75519358,17.77908536,complete,Foundation,UMP,247,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+265,,0,SCBL-177094D-Foundation Support,SCBL,177094D,Foundation Support,,,,SCBL,-103.7072431,41.8347614,complete,Foundation,UMP,248,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+266,,1,SEKI-191247D-Foundation Document,SEKI,191247D,Foundation Document,,,,SEKI,-118.499581,36.711896,current,Foundation,UMP,249,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+267,,0,SEMO-189056-Foundation Document,SEMO,189056,Foundation Document,,,,SEMO,-86.72823702,32.27082092,complete,Foundation,UMP,250,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+268,,1,SHBA-164210-Special Resource Study-EA,SHBA,164210,Special Resource Study,EA,,,SHBA,-77.782619,39.420212,current,SRS,Other,255,7/7/2015,7/7/2015,10,10,9,9,9,9,9
+269,,1,SHEN-145080-CWD Plan-EIS,SHEN,145080,CWD Plan,EIS,,,SHEN,-78.67619963,38.28106541,current,"EIS, EA",UMP,256,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+270,,1,SHEN-176042-Foundation Documents,SHEN,176042,Foundation Documents,,,,SHEN,-78.67619963,38.28106541,current,Foundation,UMP,257,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+271,,0,SHEN-XXX-PDC-DBS ROW EA,SHEN,XXX,PDC,DBS ROW EA,,,SHEN,-78.67619963,38.28106541,complete,"EIS, EA",UMP,258,7/7/2015,7/7/2015,12,12,11,11,11,11,11
+272,,1,SHIL-189056-Foundation Document,SHIL,189056,Foundation Document,,,,SHIL,-88.34213102,35.13852204,current,Foundation,UMP,259,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+273,,0,SLBE-177094D-Foundation Support,SLBE,177094D,Foundation Support,,,,SLBE,-86.01521888,45.11160542,complete,Foundation,UMP,260,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+274,,1,SLBE-XXX-Platte River Recreation Area-TAIP,SLBE,XXX,Platte River Recreation Area,TAIP,,,SLBE,-86.01521888,45.11160542,current,Accessibility,Other,261,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+275,,1,SLBE-XXX-Wilderness Basics,SLBE,XXX,Wilderness Basics,,,,SLBE,-86.01521888,45.11160542,current,Wilderness,Other,262,7/7/2015,7/7/2015,7,7,6,6,6,6,6
+276,,1,STEA-XXX-Historic Train Museum-TAIP,STEA,XXX,Historic Train Museum,TAIP,,,STEA,-75.67037251,41.40757514,current,Accessibility,Other,263,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+277,,0,STRI-189056-Foundation Document,STRI,189056,Foundation Document,,,,STRI,-86.43408004,35.87318749,complete,Foundation,UMP,265,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+278,,1,SUCR-188107-Foundation Document includes WACA and WUPA,SUCR,188107,Foundation Document includes WACA and WUPA,,,,SUCR,-111.510376,35.37114203,current,Foundation,UMP,266,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+279,,0,TICA-188107-Foundation Support,TICA,188107,Foundation Support,,,,TICA,-111.7093944,40.44039704,complete,Foundation,UMP,267,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+280,,1,TUAI-189056-Foundation Document,TUAI,189056,Foundation Document,,,,TUAI,-85.67983319,32.45538667,current,Foundation,UMP,268,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+281,,1,TUIN-189056-Foundation Document,TUIN,189056,Foundation Document,,,,TUIN,-85.70430589,32.42956952,current,Foundation,UMP,269,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+282,,1,TULE-174231-Complete Accessibility SETP,TULE,174231,Complete Accessibility SETP,,,,TULE,-121.371738,41.887383,current,Accessibility,Other,270,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+283,,1,ULSG-177094C-Foundation Document Support,ULSG,177094C,Foundation Document Support,,,,ULSG,-90.35169255,38.55182373,current,Foundation,UMP,271,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+284,,0,VALL-188107-Foundation Document,VALL,188107,Foundation Document,,,,VALL,-106.5106,35.9181972,complete,Foundation,UMP,274,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+285,,0,VALR-191247D-Foundation Support,VALR,191247D,Foundation Support,,,,VALR,-157.9385975,21.36693585,complete,Foundation,UMP,275,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+286,,0,VAMA-176042-Foundation Support,VAMA,176042,Foundation Support,,,,VAMA,-73.94185758,41.79439805,complete,Foundation,UMP,276,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+287,,0,VICK-189056-Foundation Document,VICK,189056,Foundation Document,,,,VICK,-90.84309724,32.36451085,complete,Foundation,UMP,278,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+288,,1,VICR-XXX-Foundation Document,VICR,XXX,Foundation Document,,,,VICR,-64.70793993,18.27350899,current,Foundation,UMP,279,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+289,,1,VIIS-XXX-Foundation Document,VIIS,XXX,Foundation Document,,,,VIIS,-64.74194397,18.34279345,current,Foundation,UMP,280,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+290,,1,VOYA-177094D-Foundation Document,VOYA,177094D,Foundation Document,,,,VOYA,-92.83720626,48.48327144,current,Foundation,UMP,281,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+291,,1,WABA-188107-Foundation Document,WABA,188107,Foundation Document,,,,WABA,-99.70445142,35.62083955,current,Foundation,UMP,282,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+292,,1,WHIS-214149-SETP,WHIS,214149,SETP,,,,WHIS,-122.6022603,40.6135802,current,Accessibility,Other,292,7/7/2015,7/7/2015,14,14,13,13,13,13,13
+293,,1,WHMI-191247D-Foundation Document,WHMI,191247D,Foundation Document,,,,WHMI,-118.4654876,46.04265092,current,Foundation,UMP,293,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+294,,1,WHSA-188107-Foundation Document,WHSA,188107,Foundation Document,,,,WHSA,-106.3350855,32.77908003,current,Foundation,UMP,294,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+295,,0,WICR-177094D-Foundation Support,WICR,177094D,Foundation Support,,,,WICR,-93.40985161,37.09998951,complete,Foundation,UMP,295,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+296,,0,WIHO-177094D-Foundation Document,WIHO,177094D,Foundation Document,,,,WIHO,-84.50758951,39.11970352,complete,Foundation,UMP,296,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+297,,0,WORI-176042-Foundation Support,WORI,176042,Foundation Support,,,,WORI,-76.84451357,42.90262007,complete,Foundation,UMP,297,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+298,,1,WRBR-189056-Foundation Document,WRBR,189056,Foundation Document,,,,WRBR,-75.67022037,36.01621134,current,Foundation,UMP,298,7/7/2015,7/7/2015,15,15,14,14,14,14,14
+299,,1,YOSE-191247D-Wilderness Prep for Foundation,YOSE,191247D,Wilderness Prep for Foundation,,,,YOSE,-119.5569774,37.84832509,current,Wilderness,Other,299,7/7/2015,7/7/2015,7,7,6,6,6,6,6
+300,,1,YUHO-188107-Foundation Document,YUHO,188107,Foundation Document,,,,YUHO,-108.6859548,37.24895444,current,Foundation,UMP,300,7/7/2015,7/7/2015,15,15,14,14,14,14,14

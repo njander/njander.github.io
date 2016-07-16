@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "Seattle", "Description": "" }, "geometry": { "type": "Point", "coordinates": [ -122.3327637, 47.606163, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Denver", "Description": "" }, "geometry": { "type": "Point", "coordinates": [ -104.9963379, 39.7409864, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Puebla", "Description": "" }, "geometry": { "type": "Point", "coordinates": [ -98.2067871, 19.0413488, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Costa Rica", "Description": "" }, "geometry": { "type": "Point", "coordinates": [ -84.1511536, 9.6088742, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Colombia", "Description": "" }, "geometry": { "type": "Point", "coordinates": [ -74.0698242, 4.7078284, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Brazil", "Description": "" }, "geometry": { "type": "Point", "coordinates": [ -47.878418, -15.8133958, 0.0 ] } }
+]
+}

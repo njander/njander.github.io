@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title> Starting a Github Page</title>
+    <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <style>
+
+      /*
+        SLIDE STYLES:
+        All slides are assumed to contain one 'p' element, one 'img' element, or one of each.
+
+        <div class="slide">
+          -- Default style. If no image, text is centered. If image present, it is centered and text is at the top.
+          -- Arbitrary content could go here too (e.g. I used a couple of iframes), but default behavior will mess with any p or img elements.
+
+        <div class="slide image_full">
+          -- Full 1024x768 img, somewhat faded to black and with bold white text (p) centered on top.
+
+        <div class="slide image_bottom">
+          -- Mostly like default except that image appears at the bottom. (Basically just to give more room for longer text).
+
+        Can make additional class styles for p elements and such if you need different text sizes, colors, etc.
+        (e.g. there is a p.title style with a bigger font)
+
+        img elements themselves are not displayed; rather, their src attributes are applied as div backgrounds. This is to make centering easier, basically.
+      */
+
+      html, body {
+        margin: 0;
+        font: 20px/24px 'Arimo', sans-serif;
+        background-color: #000;
+      }
+      .slide, .slide div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1024px;
+        height: 768px;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .slide {
+        background-color: #000;
+
+      }
+      .slide.image_bottom {
+        background-position: center bottom;
+      }
+      .slide p {
+        position: absolute;
+        font-size: 64px;
+        color: #fff;
+        line-height: 72px;
+        font-weight: bold;
+        text-align: center;
+        margin: 15px 1% 0 1%;
+        width: 98%;
+      }
+      .slide ul {
+        top: 50px;
+        left: 300px;
+        position: absolute;
+        color: #fff;
+        font-size: 64px;
+        line-height: 72px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+      }
+      .slide img {
+        display: none;
+      }
+      .slide.image_full {
+        background-color: black;
+      }
+
+      .slide.image_full div {
+        opacity: .5;
+      }
+      .slide.image_full p {
+        color: white;
+        text-shadow:0px 0px 10px #000000;
+      }
+      .slide.image_full.repeat div {
+        background-position: 0 0;
+        background-repeat: repeat;
+      }
+      .slide p.title {
+        font-size: 120px;
+      }
+      a {
+        color: #34d0e7;
+        text-decoration: none;
+      }
+
+      li {
+        color: #34d0e7;
+        text-decoration: none;
+        line-height: 72px;
+        font-weight: bold;
+        text-align: center;
+
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a.citation {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        color: #000;
+        background-color: rgba(255,255,255,.75);
+      }
+      em {
+        font-style: normal;
+        color: #F3EB37;
+      }
+      .code{
+        font-family: 'Courier New';
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide">
+      <p>Github Basics</p>
+      <a class="citation" target="_blank" href="https://github.com/">Neal Jander</a>
+    </div>
+
+    <div class="slide image_bottom">
+      <img src="images/mmh_github.jpg"/>
+      <p>Github is a GIS Repository hosting service used by millions to manage projects.</p>
+      <a class="citation" target="_blank" href="https://github.com/">#github</a>
+    
+	</div>
+	
+	    <div class="slide image_bottom">
+      <p>How is Github currently used at NPS?</br>
+      <m><a target="_blank" href=" https://github.com/nationalparkservice">NPS Repository</a></em><br/>
+      <m><a target="_blank" href=" https://github.com/nationalparkservice/npmap-builder">NPmap Builder</a></em><br/>
+      <m><a target="_blank" href="https://github.com/nationalparkservice/npmap-symbol-library/blob/gh-pages/pngs/airport-black-24%402x.png">Symbol Library</a></em><br/>
+      
+    </div>
+	
+
+    <div class="slide image_full">
+      <img src="images/web.jpg"/>
+      <p>What can I host on Github?</p>
+    </div>
+
+    <div class="slide">
+      <p> You will be able to host static files such as: .html, .js, .json, <a target="_blank" href="https://github.com/njander/vcgi-demo1/blob/master/morristown_corners.geojson">.geojson</a> , .csv, image files etc.</p>
+    </div>
+
+    <div class="slide">
+      <p>What this will allow you to do is run a site such as <a target="_blank" href="http://esri.github.io/">this</a> and host maps such as <a target="_blank" href="http://njander.github.io/Cartodb2/">this!</a></p>
+    </div>
+    <div class="slide">
+      <iframe width="100%" height="95%" frameborder="0" src="http://njander.github.io/NPMAP3/"></iframe>
+
+    </div>
+	<div class="slide">
+      <p>You can edit geojson files directly from <a target="_blank" href="http://geojson.io/">geojson.io</a> and then see the changes in maps such as <a target="_blank" href="https://nationalparkservice.cartodb.com/u/andrewjander/viz/786e5f04-6929-11e5-a4f0-0e3ff518bd15/embed_map">this!</a></p>
+    </div>
+
+    <div class="slide image_bottom">
+      <p>Things that are needed to use Github:</br>
+      <em>A computer machine</em><br/>
+      <em>the internet</em><br/>
+      <em>a github account</em><br/>
+      <em><a target="_blank" href=" https://desktop.github.com/">some github Software</a></em><br/>
+      <em>a fine text editor</em><br/></p>
+
+
+    </div>
+	
+	<div class="slide image_bottom">
+      <img src="images/collaborate.png"/>
+      <p>How our team could use Github:</br>
+	  <em>*Things GoogleDrive isn't good at</em><br/>
+	  <em>*Issue tracking/ work requests</em><br/>
+	  <em>*Webmap development</em><br/>
+	  <em>*documentation</em><br/>
+	  <em>*Collaborating w/ partners outside DOI</em><br/>
+    
+	</div>
+	
+	
+	<div class="slide image_bottom">
+      <img src="images/status.jpg"/>
+      <p></br>
+	</div>
+	
+	
+	<div class="slide image_bottom">
+      <img src="images/danger.jpg"/>
+      <p>Options for ESRI users:</br>
+	  <em><a target="_blank" href="https://github.com/project-open-data/esri2open">esri2opendata converter</a></em><br/>
+    
+	</div>
+
+
+
+    <script>
+      // The following is mostly derived from https://github.com/tmcw/big
+
+      var slides = document.getElementsByClassName("slide"),
+        current = 0;
+
+      function go(n){
+        current = n;
+        var slide = slides[n],
+          classes = slide.className.split(" ");
+        for (var i = 0; i < slides.length; i++) slides[i].style.display = 'none';
+        slide.style.display = 'block';
+
+      slide.style.left = (window.innerWidth - slide.offsetWidth) / 2 + "px";
+      slide.style.top = (window.innerHeight - slide.offsetHeight) / 2 + "px";
+
+        if ( classes[1] && styleSlide[classes[1]] ) styleSlide[classes[1]](slide);
+        else styleSlide.normal(slide);
+        resize();
+
+        if (window.location.hash !== n) window.location.hash = n;
+      }
+
+      var styleSlide = {
+        heading: function(slide){
+          var p = slide.getElementsByTagName("p")[0];
+          p.style.marginTop = (slide.offsetHeight - p.offsetHeight) / 2 + "px";
+        },
+
+        image_full: function(slide){
+          var img = slide.getElementsByTagName("img")[0];
+          var p = slide.getElementsByTagName("p")[0];
+          var div = slide.getElementsByTagName("div")[0] || document.createElement("div");
+          div.style.backgroundImage = 'url(' + img.src + ')';
+          slide.insertBefore(div,p);
+              img.style.display = 'none';
+          p.style.marginTop = (slide.offsetHeight - p.offsetHeight) / 2 + "px";
+        },
+
+        image_bottom: function(slide){
+          var img = slide.getElementsByTagName("img")[0];
+          if ( !img ) return;
+              slide.style.backgroundImage = 'url(' + img.src + ')';
+              img.style.display = 'none';
+        },
+
+        normal: function(slide){
+          var img = slide.getElementsByTagName("img")[0];
+          var p = slide.getElementsByTagName("p")[0];
+
+          if ( img ){
+            slide.style.backgroundImage = 'url(' + img.src + ')';
+          } else if (!img && !slide.getElementsByTagName("iframe")[0]){
+            if ( p ){
+              p.style.marginTop = (slide.offsetHeight - p.offsetHeight) / 2 + "px";
+            }
+          }
+        }
+      }
+
+      document.onclick = function() { go(++current % (slides.length)); };
+        function fwd() { go(Math.min(slides.length - 1, ++current)); }
+        function rev() { go(Math.max(0, --current)); }
+        document.onkeydown = function(e) {
+            if (e.which === 39 || e.which === 34 || e.which === 40) fwd();
+            if (e.which === 37 || e.which === 33 || e.which === 38) rev();
+        };
+        document.ontouchstart = function(e) {
+            var x0 = e.changedTouches[0].pageX;
+            document.ontouchend = function(e) {
+                var x1 = e.changedTouches[0].pageX;
+                if (x1 - x0 < 0) fwd();
+                if (x1 - x0 > 0) rev();
+            };
+        };
+
+        function parse_hash() {
+            return Math.max(Math.min(slides.length - 1,
+                parseInt(window.location.hash.substring(1), 10)), 0);
+        }
+        if (window.location.hash) current = parse_hash() || current;
+        window.onhashchange = function() {
+            var c = parse_hash();
+            if (c !== current) go(c);
+        };
+        window.onresize = resize;
+
+        function resize(){
+          var s = Math.min( 1, Math.min( window.innerHeight / 768, window.innerWidth / 1024 ) );
+            slides[current].style.webkitTransform = "scale(" + s + "," + s +")";
+          slides[current].style.MozTransform = "scale(" + s + "," + s +")";
+          slides[current].style.msTransform = "scale(" + s + "," + s +")";
+          slides[current].style.transform = "scale(" + s + "," + s +")";
+        }
+        go(current);
+    </script>
+  </body>
+</html>

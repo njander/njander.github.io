@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="map" style="height:500px;width:100%;">
+    </div>
+    <script>
+      var App, NPMap;
+
+App = {
+  types: [
+    'Trails',
+    'Roads',
+	'Points of Interest'
+  ],
+  
+  checkChange: function(id, checked){
+    var overlay = (function(){
+      for (var i = 0; i < NPMap.config.overlays.length; i++) {
+        if (NPMap.config.overlays[i].table === id) {
+          return NPMap.config.overlays[i];
+        }
+      }
+    })();
+
+    if (checked) {
+      overlay.L.addTo(NPMap.config.L);
+    } else {
+      NPMap.config.L.removeLayer(overlay.L);
+    }
+  }
+};
+
+var NPMap = {
+  baseLayers: [
+    'esri-imagery',
+    'nps-parkTilesImagery',
+    'nps-parkTiles'
+  ],
+  center: {
+    lat: 37.8225292,
+    lng: -122.484404
+  },
+  detectAvailablePopupSpace: false,
+  div: 'map',
+  fullscreenControl: true,
+  homeControl: true,
+  hooks: {
+    preinit: function(callback) {
+      var html = '';
+      NPMap.config.overlays = [];
+
+      for (var i=0; i< App.types.length; i++){
+        var name = App.types[i].toLowerCase().replace(/\s/g, ''),
+          formalName = App.types[i];
+
+		NPMap.config.overlays.push({type: 'cartodb', user: 'nps', sql: "SELECT * FROM trails WHERE unit_code='goga'", table: 'trails', name: formalName,});
+		NPMap.config.overlays.push({type: 'cartodb', user: 'nps', sql: "SELECT * FROM roads WHERE unit_code='goga'", table: 'roads', name: formalName,});
+		NPMap.config.overlays.push({type: 'cartodb', user: 'nps', sql: "SELECT * FROM points_of_interest WHERE unit_code='safr'", table: 'points of interest', name: formalName,});
+
+        var layer = NPMap.config.overlays[i];
+
+        switch (name) {
+          case 'trails':
+            styling = '#trails{line-width: 1.5; line-color: #FF5C00; line-opacity: 0.8}';
+          break;
+		  case 'roads':
+            styling = '#roads{line-width: 1.5; line-color: #0066CC; line-opacity: 0.8}';
+          break;
+		   case 'points of interest':
+            styling = '#points of interest{marker-color: #FFFFFF; marker-size: medium}';
+          break;
+		  
+		}
+
+        layer.cartocss = styling;
+
+        L.npmap.util._.appendCssFile('http://nricms.nps.doi.net/orgs/1439/upload/map.css');
+
+        html += '<table class="legend">' +
+          '<tr>' +
+          '<td class="box"><input id="' + name + '" name="checkLayers" onchange="App.checkChange(this.id, this.checked);return false;" type="checkbox"></td>' +
+          '<td class="labelName"><label class="labelName" for="'+ name + '">'+ formalName + '</label></td>' +
+          '<td><div class="symbol"><img class="symbol" src="http://njander.github.io/images/'+ name + '.png"></div></td>' +
+          '</tr>'
+      }
+      NPMap.config.legendControl = {
+        html: html + '</table>',
+        position: 'bottomleft'
+      };
+      callback();
+    },
+	init: function(callback){
+    for (var i = 0; i < NPMap.config.overlays.length; i++) {
+    	NPMap.config.L.removeLayer(NPMap.config.overlays[i].L);
+	  };
+		callback();
+    }
+  },
+  locateControl: {
+    circlePadding: [100, 100],
+    follow: true,
+    locateOptions: {
+      enableHighAccuracy: true
+    }
+  },
+  maxZoom: 18,
+  zoom: 12,
+};
+
+var s = document.createElement('script');
+s.src = 'http://www.nps.gov/lib/npmap.js/2.0.0/npmap-bootstrap.min.js';
+document.body.appendChild(s);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="map" style="height:1024px;width:768px;">
+    </div>
+    <script>
+      var NPMap = {
+        "baseLayers": [
+          "nps-parkTiles"
+        ],
+        "center": {
+          "lat": 47.71345768748889,
+          "lng": -123.81317138671874
+        },
+        "description": "A test of NPMAP Builder",
+        "div": "map",
+        "editControl": true,
+        "fullscreenControl": true,
+        "geocoderControl": true,
+        "homeControl": true,
+        "mapId": "f8c57d46-0ed1-4678-a33e-8f31f4ea2c55",
+        "measureControl": true,
+        "name": "Neal's Test Map",
+        "overlays": [
+          {
+            "opacity": 1,
+            "table": "trails",
+            "type": "cartodb",
+            "user": "nps",
+            "sql": "SELECT * FROM trails WHERE unit_code='olym'",
+            "name": "OLYM Trails",
+            "styles": {
+              "stroke": "#9400d3",
+              "stroke-width": "2",
+              "stroke-opacity": "0.8"
+            }
+          },
+		  {
+            "opacity": 1,
+            "table": "trails",
+            "type": "cartodb",
+            "user": "nps",
+            "sql": "SELECT * FROM trails WHERE unit_code='grsm'",
+            "name": "GRSM Trails",
+            "styles": {
+              "stroke": "#9400d3",
+              "stroke-width": "2",
+              "stroke-opacity": "0.8"
+            }
+          },
+          {
+            "opacity": 1,
+            "table": "points_of_interest",
+            "type": "cartodb",
+            "user": "nps",
+            "sql": "SELECT * FROM points_of_interest WHERE unit_code='olym'",
+            "name": "OLYM Points of Interest",
+            "styles": {
+              "marker-color": "#000000",
+              "marker-size": "small"
+            }
+          }
+        ],
+        "printControl": true,
+        "scaleControl": true,
+        "smallzoomControl": true,
+        "zoom": 9,
+        "zoomdisplayControl": true
+      };
+
+      var s = document.createElement('script');
+      s.src = 'http://www.nps.gov/lib/npmap.js/2.0.0/npmap-bootstrap.min.js';
+      document.body.appendChild(s);
+    </script>
+  </body>
+</html>
