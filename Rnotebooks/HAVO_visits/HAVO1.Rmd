@@ -1,0 +1,103 @@
+---
+title: "Airline Passengers to Hawaii and Visitors at HAVO"
+output:
+  html_document:
+    df_print: paged
+---
+ 
+ ![](https://www.nps.gov/havo/planyourvisit/images/map_islandcolored_2005_300dpi_lg.jpg)
+
+### Passenger data comes [from the following source](https://www.transtats.bts.gov/Data_Elements.aspx?Data=1)
+### HAVO visitation data comes [from the following source](https://irma.nps.gov/Stats/)
+
+```{r}
+HAVO1 <- read.csv("VisitationbyMonth3.csv")
+```
+
+
+```{r}
+head(HAVO1)
+```
+
+
+Getting a wide data set into a long data set
+
+```{r}
+library(tidyverse)
+
+HAVO2 <-  HAVO1 %>%
+  gather(year, visitors, contains("X"))
+
+head(HAVO2)
+```
+
+
+send it out to combine with the flight passenger data.
+```{r}
+write.csv(HAVO2,file = "HAVO4.csv")
+```
+
+
+This is a file that contains all of the passenger info from Kona and Hilo Airports as well as the visitor counts from HAVO.
+```{r}
+HAVO5 <- read.csv("HAVO5.csv")
+```
+
+
+Histogram of total incoming passengers per month at both Kona and Hilo Airports, a fairly normal distribution.
+```{r}
+hist(HAVO5$HILOKONAtotal)
+```
+
+
+Histogram of total visitors per month for HAVO, a fairly normal distribution
+```{r}
+hist(HAVO5$visitors)
+```
+
+
+Scatter plot showing total inbound passengers per month at Hilo and Kona on the X-axis and Y-axis the total visitors per month at HAVO. Then called a method to fit a linear model (blue line) with the confidence interval in grey. Data from 2002 - 2017.
+```{r}
+library(ggplot2)
+
+
+p <- ggplot(HAVO5, aes(x=HAVO5$HILOKONAtotal, y=HAVO5$visitors)) + geom_point() + geom_smooth(method = lm)
+
+p + labs(x = "Inbound Passengers per Month at Hilo & Kona", y = "Visitors Per Month at HAVO")
+```
+
+
+here is a simple pearson's correlation calc, positive linear association between passengers and visitors
+```{r}
+cor(HAVO5$visitors,HAVO5$HILOKONAtotal)
+```
+
+```{r}
+fit1<-lm(HAVO5$visitors~HAVO5$HILOKONAtotal)
+
+summary(fit1)
+```
+
+### Conclusion
+
+This analysis is based on monthly inbound passenger data and monthly visitor data from October 2002 - August 2017. Based on this result, for every 1 additional passenger on inbound flights to the island, we would expect to see a 0.85 visitor increase at HAVO for that month on average. The p value of the passenger explanatory variable is very tiny which means we can reject the null hypothesis and say that the 0.85 is statistically significant. The null hypothesis in this case would be that as inbound passengers to the island changes, the change in visitors at HAVO could not be distinguished from random. The residual standard error of the model is pretty high at 23410 which means that the linear model is either under or over predicting visitors to HAVO per month by that amount. The R-squared result of this model can be interpereted as 36% of the variation in the visitors per month at HAVO can be explained by variation in the amount of inbound passengers per month at Kona and Hilo airports combined.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
