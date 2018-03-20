@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="map" style="height:500px;width:500px;">
+    </div>
+    <script>
+      var NPMap = {
+        "baseLayers": [
+          "nps-parkTiles"
+        ],
+        "center": {
+          "lat": 44.59046718130883,
+          "lng": -102.39257812499999
+        },
+        "div": "map",
+        "fullscreenControl": true,
+        "hashControl": false,
+        "homeControl": true,
+        "mapId": "6796e967-0c84-45dc-99e8-c5cb0f715528",
+        "overlays": [
+          {
+            "type": "geojson",
+            "url": "https://andrewjander.cartodb.com/api/v2/sql?q=SELECT * FROM andrewjander.projectcenter_10_25_2017 WHERE finish > '2017-09-30T00:00:00Z'&format=geojson",
+            "cluster": true,
+            "attribution": "2",
+            "description": "Current DSC projects",
+            "name": "Projects",
+            "popup": {
+              "description": "The project type is: {{category}} &lt;br&gt;\nThe project name is: {{project_name}} &lt;br&gt;\nThe funding source is: {{active_funding_sources}}\n&lt;br&gt;\nFinish date: {{finish}}\n&lt;br&gt;\nThe URL is:\n&lt;a href=&quot;https://www.nps.gov/{{park_code}}&quot; target=&quot;_blank&quot;&gt;www.nps.gov/{{park_code}}&lt;/a&gt;\n",
+              "title": "Park Unit: {{park_code}}"
+            },
+            "styles": {
+              "point": {
+                "marker-library": "maki",
+                "marker-symbol": "star",
+                "marker-color": "#332288",
+                "marker-size": "medium"
+              }
+            }
+          },
+          {
+            "type": "geojson",
+            "url": "https://andrewjander.cartodb.com/api/v2/sql?q=SELECT * FROM region_points2 WHERE unit_code IN ('WASO') &format=geojson",
+            "cluster": true,
+            "name": "WASO",
+            "styles": {
+              "point": {
+                "marker-library": "npmapsymbollibrary",
+                "marker-symbol": "visitor-center-white",
+                "marker-color": "#117733",
+                "marker-size": "large"
+              }
+            },
+            "popup": {
+              "title": "Service Wide Projects"
+            },
+            "tooltip": "Service Wide Projects"
+          },
+          {
+            "type": "geojson",
+            "url": "https://server-utils.herokuapp.com/arcgis2geojson/?url=https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Footprints/FeatureServer/0",
+            "cluster": true,
+            "attribution": "footprint",
+            "description": "footprint",
+            "name": "Project Footprints",
+            "popup": {
+              "description": "The funding source is: {{Fund_SRC}}\n&lt;br&gt;\nThe park unit is: {{Park_Code}}\n&lt;br&gt;\nThe Project Manager is: {{ProjectMGR}}",
+              "title": "Project Name: {{ProjectNM}}"
+            },
+            "styles": {
+              "polygon": {
+                "fill": "#d39800",
+                "fill-opacity": 0.2,
+                "stroke": "#d39800",
+                "stroke-opacity": 0.8,
+                "stroke-width": 3
+              }
+            }
+          }
+        ],
+        "overviewControl": {
+          "layer": "nps-parkTiles"
+        },
+        "printControl": true,
+        "scaleControl": true,
+        "smallzoomControl": true,
+        "zoom": 4,
+        "zoomdisplayControl": true
+      };
+
+      var s = document.createElement('script');
+      s.src = 'https://www.nps.gov/lib/npmap.js/3.0.18/npmap-bootstrap.min.js';
+      document.body.appendChild(s);
+    </script>
+  </body>
+</html>
