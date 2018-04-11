@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSC Projects By FY DRAFT</title>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js" integrity="sha512-WXoSHqw/t26DszhdMhOXOkI7qCiv5QWXhH9R7CgvgZMHz1ImlkVQ3uNsiQKu5wwbbxtPzFXd1hK4tzno2VqhpA==" crossorigin=""></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="screen.css" />
+
+	<link rel="stylesheet" href="../dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../dist/MarkerCluster.Default.css" />
+	<script src="../dist/leaflet.markercluster-src.js"></script>
+	<script src="realworld.388_2.js"></script>
+
+</head>
+<body>
+
+	<div id="map"></div>
+	<!-- <span>Denver Service Center Projects Draft Map. Mouse over a cluster to see the bounds of its children and click a cluster to zoom to those bounds.</span> -->
+	<script type="text/javascript">
+
+		var tiles = L.tileLayer('https://a.tiles.mapbox.com/v4/nps.2yxv8n84/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibnBzIiwiYSI6IkdfeS1OY1UifQ.K8Qn5ojTw4RV1GwBlsci-Q', {
+				maxZoom: 18,
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">NPS Park Tiles</a> contributors, Points &copy 2012 LINZ'
+			}),
+			latlng = L.latLng(40.684081, -100.808928);
+
+		var map = L.map('map', {center: latlng, zoom: 3, layers: [tiles]});
+
+		var markers1 = L.markerClusterGroup();
+
+		for (var i = 0; i < fy2016.length; i++) {
+			var a = fy2016[i];
+			var title = "Park Name: " + a[2] + "<br>" + "Project Name: " + a[3] + "<br>" + "Start: " + a[4] + "<br>" + "Finish: " + a[5] ;
+			var marker = L.marker(new L.LatLng(a[0], a[1]), {});
+			marker.bindPopup(title);
+			markers1.addLayer(marker);
+		}
+
+		map.addLayer(markers1);
+
+		var markers2 = L.markerClusterGroup();
+
+		for (var i = 0; i < fy2017.length; i++) {
+			var a = fy2017[i];
+			var title = "Park Name: " + a[2] + "<br>" + "Project Name: " + a[3] + "<br>" + "Start: " + a[4] + "<br>" + "Finish: " + a[5] ;
+			var marker = L.marker(new L.LatLng(a[0], a[1]), {});
+			marker.bindPopup(title);
+			markers2.addLayer(marker);
+		}
+
+		map.addLayer(markers2);
+
+		var markers3 = L.markerClusterGroup();
+
+		for (var i = 0; i < fy2018.length; i++) {
+			var a = fy2018[i];
+			var title = "Park Name: " + a[2] + "<br>" + "Project Name: " + a[3] + "<br>" + "Start: " + a[4] + "<br>" + "Finish: " + a[5] ;
+			var marker = L.marker(new L.LatLng(a[0], a[1]), {});
+			marker.bindPopup(title);
+			markers3.addLayer(marker);
+		}
+
+		map.addLayer(markers3);
+
+
+		var overlays = {
+			"Fiscal Year 2016": markers1,
+			"Fiscal Year 2017": markers2,
+			"Fiscal Year 2018": markers3
+
+		};
+		L.control.layers(null, overlays).addTo(map);
+
+	</script>
+</body>
+</html>
