@@ -1,0 +1,34 @@
+<div class="gis_PrintDijit">
+    <div class="formContainer">
+        <div data-dojo-type="dijit.form.Form" data-dojo-attach-point="printSettingsFormDijit">
+            <table cellspacing="5" style="width:100%;">
+                <tr>
+                    <td style="width:50px;">
+                        Title:
+                    </td>
+                    <td>
+                        <input type="text" data-dojo-type="dijit.form.ValidationTextBox" data-dojo-props="name:'title',trim:true,required:true,style:'width:100%;',value:'${defaultTitle}'"
+                        />
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <div class="buttonActionBar">
+        
+        <div data-dojo-type="dijit.form.Button" data-dojo-props="busyLabel:'printing',iconClass:'printIcon'"
+        data-dojo-attach-event="onClick:print" data-dojo-attach-point="printButtonDijit">
+            Print
+        </div>
+    </div>
+    <div data-dojo-attach-point="printResultsNode" class="resultsContainer">
+    </div>
+    <div data-dojo-attach-point="clearActionBarNode" class="buttonActionBar"
+    style="display:none;padding:0;">
+        <div data-dojo-type="dijit.form.Button" data-dojo-props="iconClass:'clearIcon'"
+        data-dojo-attach-event="onClick:clearResults">
+            Clear Prints
+        </div>
+    </div>
+</div>

@@ -1,0 +1,228 @@
+#mapDiv {
+  min-height: 100%; 
+  max-height: 100%;    
+}
+#swipeDiv{
+  color: red !important;
+  top: 20px;
+}
+#scopeDiv{
+  top:50px; 
+}
+
+#navbar{
+
+  /* for Chrome and Safari gradients*/
+  background: -webkit-linear-gradient(top, #1478c3 0%, #081b3e 100%);
+  background-image: -webkit-linear-gradient(top, rgb(20, 120, 195) 0%, rgb(8, 27, 62) 100%);
+
+
+  /* for Mozilla gradients*/
+  background: -moz-linear-gradient(top, #1478c3 0%, #081b3e 100%);
+  background-image: -moz-linear-gradient(top, rgb(20, 120, 195) 0%, rgb(8, 27, 62) 100%);
+
+  margin-bottom: 0px;
+
+}
+#navbarContainer{
+  /* background: url(https://nga.maps.arcgis.com/apps/PublicGallery/images/ui/banner.png) 0% 0% no-repeat; */
+}
+
+#splashTitle
+{
+    background: url(https://nga.maps.arcgis.com/apps/PublicGallery/images/ui/banner.png) 0% 0% no-repeat;
+     padding: 7px;
+     color:#fffa24;
+     text-align: left;
+
+}
+
+#splashHeader
+{
+
+
+  /* for Chrome and Safari gradients*/
+  background: -webkit-linear-gradient(top, #1478c3 0%, #081b3e 100%);
+  background-image: -webkit-linear-gradient(top, rgb(20, 120, 195) 0%, rgb(8, 27, 62) 100%);
+
+   /* for Mozilla gradients*/
+  background: -moz-linear-gradient(top, #1478c3 0%, #081b3e 100%); 
+  background-image: -moz-linear-gradient(top, rgb(20, 120, 195) 0%, rgb(8, 27, 62) 100%);
+  
+  margin-bottom: 0px;
+  padding: 0px;
+
+}
+
+#splashContent
+{
+  text-align: center;
+}
+
+.close{
+    color: #EDF1F0; 
+    opacity: 1;
+    text-shadow: none;
+}
+
+#currentCoordinates{
+  position:absolute; 
+  left:50%;
+  bottom:22.5px; 
+  z-index:150;
+
+  color: #edf1f0;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+#copyRightLabel
+{
+  position:absolute; 
+  left:75%;
+  bottom:22.5px; 
+  z-index:150;
+
+  color: #edf1f0;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+#copyLeftLabel
+{
+  position:absolute; 
+  right:75%;
+  bottom:22.5px; 
+  z-index:150;
+
+  color: #edf1f0;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+#measurePanel
+{
+  width: 200px;
+  /*position: absolute;
+  z-index: 200;
+  top: 100px;
+  left: 50px;*/
+}
+
+#measurePosition
+{
+  right:500px;
+}
+
+ #scalebar{
+    position: absolute;
+    z-index: 200;
+    top: 60px;
+    left: 75px;
+ }
+
+.esriScalebarLabel {
+    color: #edf1f0 !important;
+   text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+       
+.esriScalebarLine {
+    border-color: #edf1f0 !important;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+  }
+ 
+
+.layer-left-panel{
+  position: absolute;
+  z-index: 150;
+  top: 200px;
+  left: 10px;
+  text-align: left;
+  width:125px;
+}
+
+.layer-right-panel{
+  position: absolute;
+  z-index: 150;
+  top: 200px;
+  right: 10px;
+  text-align: left;
+  width:125px;
+}
+
+.panel-heading
+{
+    background: -webkit-linear-gradient(top, #1478c3 0%, #081b3e 100%);
+    /*Fix for Firefox*/
+    background: -moz-linear-gradient(top, #1478c3 0%, #081b3e 100%);
+    padding:0px;
+
+}
+.panel-title
+{
+      background: url(https://nga.maps.arcgis.com/apps/PublicGallery/images/ui/banner.png) 0% 0% no-repeat;
+      padding: 10px;
+
+
+}
+.panel-title:hover
+{
+  color: #fffa24;
+
+}
+
+.buttons-vertical-right
+{
+  position: absolute;
+  z-index: 200;
+  top: 65px;
+  right: 15px;
+  width: 45px;
+  float: right;
+}
+
+.buttons-vertical-right2
+{
+  position: absolute;
+  z-index: 200;
+  top: 134px;
+  right: 15px;
+  width: 45px;
+  float: right;
+}
+
+
+.fa-info-circle:hover{
+    color: #5bc0de;
+    border-color: #46b8da;
+}
+
+
+.tooltipCustom {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  visibility: visible;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+

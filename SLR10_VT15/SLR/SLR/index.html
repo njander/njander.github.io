@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' type='image/x-icon' href='src/images/favicon2.ico' />
+
+    <title>Imagery Time Viewer</title>
+
+    <!-- Bootstrap core CSS plus CSS for Navbar Icons -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this application -->
+    <link href="src/css/timeslider.css" rel="stylesheet">
+    <link href="src/css/timeslider_controls.css" rel="stylesheet">
+
+    <!-- Esri CSS -->
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.11/dijit/themes/claro/claro.css">
+    <!-- Bootstrap-map CSS -->
+    <link rel="stylesheet" type="text/css" href="src/css/bootstrapmap.css">
+
+    <!-- Bootstrap tour CSS-->
+    <link href="src/css/bootstrap-tour.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bootstrap_v3/docs-assets/js/html5shiv.js"></script>
+      <script src="../bootstrap_v3/docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+<!--Section to create the navbar-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="border:1px solid" id="navbar">
+      <div class="container-fluid" id="navbarContainer">
+        <div class="navbar-header" style: "padding: 50px">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-div1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="https://www.nps.gov/index.htm" target="_blank" style="padding:0px;"><img src="src/images/BAIDLogo2_4.png" style="width:img-responsive" class="img-responsive">
+          </a> -->
+           <a class="navbar-brand" style="padding-left: 30px; padding-top: 10px;"> <font size="5">Sea Level Rise Viewer v.1</font>
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-div1">
+          <ul class="nav navbar-nav navbar-left">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li title= "Storm Surge Maps" class="enabled"><a href="https://www.flickr.com/photos/125040673@N03/albums/with/72157645643578558" target="_blank"><i class="fa fa-arrow-circle-up fa-lg" aria-hidden="true"></i></i> Storm Surge</a></li>
+			<li title= "Tour" class="enabled"> <a role="button" id="startTourButton"><i class="fa fa-arrow-circle-up fa-lg"></i> Tour</a></li>
+            <!--<li title= "Facebook" class="disabled"> <a href="https://www.facebook.com/baid.utep" target="_blank" > <i class="fa fa-facebook-square fa-lg"></i> </a></li>-->
+            <!--<li title= "Youtube" class="disabled"><a href="https://www.youtube.com/channel/UCs3ve2zFNUSyvP7BfXLQJIA" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>-->
+			<li title= "Download Data" class="enabled"><a href="www.nealslinkhere.com" target="_blank"><i class="fa fa-arrow-circle-up fa-lg"></i> Download Data</a></li>
+            <li title= "About" class="enabled"><a href="www.nealslinkhere.com" target="_blank"><i class="fa fa-comment-o fa-lg"></i> About</a></li>
+            <li title= "Contact" class="enabled"><a href="www.nealslinkhere.com" target="_blank"><i class="fa fa-envelope-o fa-lg"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adding map to body.-->
+    <div id="mapDiv">
+      <div id="scalebar"></div>
+      <div id="swipeDiv"></div>
+      <div id="scopeDiv"></div>
+      <div id="currentCoordinates"></div>
+      <div id="copyRightLabel">Copy Right</div>
+      <div id="copyLeftLabel">Copy Left</div>
+
+            <div class="panel panel-primary layer-left-panel " id="LeftWindow">
+                <div class="panel-heading">
+                  <h3 class="panel-title" id="LeftPanelTitle">Left:<br>(Top)</h3>
+                </div>
+                <div class="panel-body">
+                  <!--Form for layers-->
+                  <form role="form" >
+                      <div id="transparencyDiv">
+                        <div>Transparency</div>
+                        <div id="sliderOpacity"></div>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="leftLayer1" checked>Current MHHW</label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num1" target="_blank"><i class="fa fa-info-circle" ></i></a>
+                      </div>
+                      <div class="radio">
+					  <h3 class="panel-title" id="RightPanelTitle">-RCP4.5-</h3>
+                        <label><input type="radio" name="optradio" id="leftLayer2">2050</label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num2" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;" ></i></a>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="leftLayer3">2100</label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num3" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>
+                      </div>
+                      <div class="radio">
+					  <h3 class="panel-title" id="RightPanelTitle">-RCP8.5-</h3>
+                        <label><input type="radio" name="optradio" id="leftLayer4">2050</i></label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num4" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="leftLayer5">2100</i></label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num5" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="leftLayer6" disabled>Map Only</i></label>
+                        <!--<a href="https://insideparkatlas.nps.gov/DSC_Dashboard/SLR_About/index.html#num1" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>-->
+                      </div>
+                  </form>
+                </div>
+            </div>
+
+            <div class="panel panel-primary layer-right-panel " id="RightWindow">
+                <div class="panel-heading">
+                  <h3 class="panel-title" id="RightPanelTitle">Right:(Bottom)</h3>
+                </div>
+                <div class="panel-body">
+                  <!--Form for layers-->
+                   <form role="form">
+                     <div class="radio">
+                        <label><input type="radio" name="optradio" id="rightLayer1" disabled>Current MHHW</label>
+                          <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num1" target="_blank"><i class="fa fa-info-circle"></i></a>
+                      </div>
+                      <div class="radio">
+					  <h3 class="panel-title" id="RightPanelTitle">-RCP4.5-</h3>
+                        <label><input type="radio" name="optradio" id="rightLayer2">2050</label >
+                          <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num2" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="rightLayer3">2100</label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num3" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>
+                      </div>
+                      <div class="radio">
+					  <h3 class="panel-title" id="RightPanelTitle">-RCP8.5-</h3>
+                        <label><input type="radio" name="optradio" id="rightLayer4">2050</label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num4" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="rightLayer5">2100</label>
+                        <a href="https://insideparkatlas.nps.gov/DSCProjects/DSC_Dashboard/SLR_About/index.html#num5" target="_blank"><i class="fa fa-info-circle" style="text-indent: 1.5em;"></i></a>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" id="rightLayer6" checked>Map Only</label>
+                        <!--<a href="metadata_pages/summary_2014_WV2_imagery.html" target="_blank"><i class="fa fa-info-circle" id="iLinkRight2014" style="text-indent: 1.5em;"></i></a>-->
+                      </div>
+                  </form>
+                </div>
+            </div>
+<!--
+            <div class="btn-group-vertical buttons-vertical-right">
+              <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="sliderControl" title="Divider"><i class="fa fa-columns fa-lg"></i></button>
+              </div>
+              <div class="btn-group" >
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="droodown" id="scopeControl" title="Spyglass"><i class="fa fa-circle-o fa-lg"></i></button>
+              </div>
+              <div class="btn-group" >
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="button" id="transparencyControl" title="Transparency"><i class="fa fa-eye fa-lg"></i></button>
+              </div>
+            </div>
+-->
+            <div class="btn-group-vertical buttons-vertical-right" data-toggle="buttons">
+              <label class="btn btn-default active">
+                <input type="radio" autocomplete="off" id="sliderControl" checked> <i class="fa fa-columns fa-lg" title="Divider"></i>
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" autocomplete="off"  id="scopeControl"> <i class="fa fa-circle-o fa-lg" title="Spyglass"></i>
+              </label>
+            </div>
+            <div class="btn-group-vertical buttons-vertical-right2" data-toggle="buttons">
+              <label class="btn btn-default active">
+                <input type="checkbox" autocomplete="off" id="transparencyControl" checked> <i class="fa fa-eye fa-lg" title="Transparency"></i>
+              </label>
+            </div>
+
+
+  <div class="modal fade" id="print-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Print</h4>
+          </div>
+          <div class="modal-body">
+            <form id="formPrint">
+              <div>
+                <div id="printModal">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div><!--Map Div close-->
+
+<!--Modal to function as Splash/Welcome screen. Displays message for user.-->
+<!--<div class="modal fade" id="splashModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header " id="splashHeader">
+            <h3 class="modal-title" id="splashTitle"><img src="src/images/BAIDLogo2_4.png" style="img-responsive">Sea Level Rise Viewer <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></h3>
+
+          </div>
+          <div class="modal-body" id="splashContent">
+              <h4 >View sea level rise, add info here.</h4>
+              <!-- <h4 >Move divider left or right to view changes through time.</h4> -->
+              <!-- <p>Click 'End Tour' to begin exploring Barrow through time.</p> -->
+              <!--<h4>Note: This application <u>will not</u> function properly in Internet Explorer.</h4>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!--Script to set the path to Bootstrap map src/js folder-->
+    <script type="text/javascript">
+      var package_path = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+      var dojoConfig = {
+          //T he location.pathname.replace() logic below may look confusing but all its doing is
+          // enabling us to load the api from a CDN and load local modules from the correct location.
+          packages: [{
+              name: "application",
+              location: package_path + '../../../src/js'
+          }]
+      };
+    </script>
+
+   <!--Script to make an arcGIS map. -->
+    <script src="https://js.arcgis.com/3.23"></script>
+    <script src="src/js/proj4js-compressed.js"></script>
+    <script>
+
+        var swipeWidget;
+        var scopeWidget;
+
+        require(["esri/map",
+          "esri/dijit/LayerSwipe",
+          "esri/arcgis/utils",
+          "dojo/_base/array",
+          "esri/SpatialReference",
+          "esri/layers/ArcGISTiledMapServiceLayer",
+          "esri/layers/ArcGISDynamicMapServiceLayer",
+          "esri/layers/FeatureLayer",
+          "application/bootstrapmap",
+          "esri/dijit/Legend",
+          "esri/layers/VectorTileLayer",
+          "dojo/_base/array",
+          "esri/geometry/webMercatorUtils",
+          "esri/dijit/Scalebar",
+          "dojo/_base/lang",
+
+          //Libraries for Measurement
+          "esri/dijit/Measurement",
+          "esri/renderers/SimpleRenderer",
+          "esri/tasks/GeometryService",
+          "esri/symbols/SimpleLineSymbol",
+          "esri/symbols/SimpleFillSymbol",
+          "esri/Color",
+          "dojo/keys",
+          "dojo/parser",
+          "esri/config",
+          "esri/sniff",
+          "esri/SnappingManager",
+          "dojo/dom",
+          "dijit/registry",
+          "dijit/form/HorizontalSlider",
+          "dijit/form/HorizontalRule",
+          "dijit/form/HorizontalRuleLabels",
+          "dojo/domReady!"],
+          function(Map, LayerSwipe, arcgisUtils, array, SpatialReference, ArcGISTiledMapServiceLayer, ArcGISDynamicMapServiceLayer, FeatureLayer, BootstrapMap, Legend, VectorTileLayer, arrayUtils,webMercatorUtils, Scalebar,lang,Measurement,SimpleRenderer, GeometryService, SimpleLineSymbol, SimpleFillSymbol, Color, keys, parser, esriConfig, has, SnappingManager, dom, registry) {
+
+            parser.parse();
+
+          //esriConfig.defaults.io.proxyUrl = "http://irpsrvgis25.utep.edu/DotNet/proxy.ashx";
+          //esriConfig.defaults.io.alwaysUseProxy = true;
+
+          //esriConfig.defaults.geometryService = new GeometryService("http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer");
+
+            //Spatial reference for this map.
+            var spatialRef = new SpatialReference({"wkid":4326});
+
+            //Initial extent of the map.
+            var startExtent = new esri.geometry.Extent(-318969.84967939122, 2330586.3891965556, 115896.85935070922, 2404551.005250067,
+            new esri.SpatialReference(spatialRef) );
+
+            //Max Extenent to limit the panning of the map.
+            //  var maxExtent = new esri.geometry.Extent(-123445.000, 2339125.000, -68485.000, 2380345.000,
+            // new esri.SpatialReference(spatialRef));
+
+              //var maxExtent = new esri.geometry.Extent(-134806.098, 2330656.766, -57812.194, 2387330.63,
+            //new esri.SpatialReference(spatialRef));
+
+            //Levels of detail for layers.
+             //var lods = [
+                //{
+                  //"level": 6,
+                  //"resolution": 66.1459656252646,
+                  //"scale":  250000
+                //},
+                //{
+                  //"level": 7,
+                  //"resolution": 33.0729828126323,
+                  //"scale": 125000
+                //},
+                //{
+                  //"level": 8,
+                  //"resolution": 16.764033528067056,
+                  //"scale": 63360
+                //}
+                //, {
+                  //"level": 9,
+                  //"resolution": 6.350012700025401,
+                  //"scale": 24000
+                //},
+                 //{
+                  //"level": 10,
+                  //"resolution": 3.1750063500127004,
+                  //"scale":  12000
+                //}
+                //, {
+                //  "level": 11,
+               //   "resolution": 1.5875031750063502,
+                //  "scale": 6000
+              //  }
+                //, {
+               //   "level": 12,
+                //  "resolution": 0.7937515875031751,
+                //  "scale": 3000
+              //  }
+               // , {
+               //   "level": 13,
+               //   "resolution": 0.39687579375158755,
+              //    "scale": 1500
+              //  }
+               // , {
+                //  "level": 14,
+               //   "resolution": 0.19843789687579377,
+               //   "scale": 750
+               // }
+               // ];
+
+            // Get a reference to the ArcGIS Map class
+            var map = BootstrapMap.create("mapDiv", {
+				basemap: "satellite",
+				center: [-80.77, 28.79],
+				zoom: 11,
+        minZoom: 11,
+               //extent: startExtent,
+                //zoom: 3,
+                //lods: lods,
+                //spatialReference: spatialRef,
+               //logo:false,
+               //showAttribution: false,
+
+             });
+
+
+             var initialExtent;
+
+             map.on('extent-change', function(event) {
+               if(!initialExtent){
+                 initialExtent = map.extent;
+               }
+
+               //If the map has moved to the point where it's center is outside the initial boundaries,
+               //then move it back to the edge where it moved out
+               var currentCenter = map.extent.getCenter();
+               if (initialExtent && !initialExtent.contains(currentCenter) && event.delta && event.delta.x !== 0 && event.delta.y !== 0) {
+                 var newCenter = map.extent.getCenter();
+
+                 //check each side of the initial extent and if the current center is outside that extent,
+                 //set the new center to be on the edge that it went out on
+                 if (currentCenter.x < initialExtent.xmin) {
+                   newCenter.x = initialExtent.xmin;
+                 }
+                 if (currentCenter.x > initialExtent.xmax) {
+                   newCenter.x = initialExtent.xmax;
+                 }
+                 if (currentCenter.y < initialExtent.ymin) {
+                   newCenter.y = initialExtent.ymin;
+                 }
+                 if (currentCenter.y > initialExtent.ymax) {
+                   newCenter.y = initialExtent.ymax;
+                 }
+                 map.centerAt(newCenter);
+               }
+             });
+
+
+            //*****************Portion of code to control layers*****************//
+
+            //Array with names for the variables, currently includes from 1955 to 2014, more to come.
+            var layerCopyRights=[
+                "Current MHHW",
+                "RCP 4.5 2050",
+                "RCP 4.5 2100",
+                "RCP 8.5 2050",
+                "RCP 8.5 2100",
+               "Map Only"
+            ];
+
+
+            var left1948 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_MHHW_L/VectorTileServer");
+
+             var left1955 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_45_2050_L/VectorTileServer");
+
+             var left1979 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_45_2100_L/VectorTileServer");
+
+             var left2002 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_85_2050_L/VectorTileServer");
+
+             var left2005 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_85_2100_L/VectorTileServer");
+
+             var left2014 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/MapOnly_Left/VectorTileServer");
+
+             var leftLayers=[left1948,left1955,left1979,left2002,left2005,left2014];
+
+             var right1948 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_MHHW_R/VectorTileServer");
+
+              var right1955 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_45_2050_R/VectorTileServer");
+
+              var right1979 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_45_2100_R/VectorTileServer");
+
+              var right2002 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_85_2050_R/VectorTileServer");
+
+              var right2005 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/slr_85_2100_R/VectorTileServer");
+
+              var right2014 = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/MapOnly_Right/VectorTileServer");
+
+              //This is a layer for the NPS Boundaries.
+              var npsbnd = new VectorTileLayer("https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/NPSBND_Left/VectorTileServer");
+
+              var rightLayers=[right1948,right1955,right1979,right2002,right2005,right2014];
+
+              //Add both sets of layers to the map (right and left).
+              map.addLayers(rightLayers);
+              map.addLayers(leftLayers);
+              map.addLayer(npsbnd);
+
+
+              //Variable to keep track of the active layer on the right (bottom layer of layerswype widget)
+              var activeLayer = right2014;
+
+              //Variable to keep track of the top layer on the left (top layer of layerswype widget)
+              var topLayer = left1948;
+
+              //Opacity value for left layer
+              var globalOpacityValue = 100;
+
+               //Function to turn on only one layer, in either the left or right side.
+              function exclusiveEnableLayer(side,layerNum)
+              {
+                for (i=0;i<6;i++)
+                {
+                  if(side==="left")
+                  {
+                    if(i==layerNum)
+                    {
+                      leftLayers[i].show();
+                      npsbnd.show();
+                      //Also enable specific copyright
+                      document.getElementById("copyLeftLabel").innerHTML=layerCopyRights[i];
+                      topLayer=leftLayers[i];
+                      leftLayers[i].setOpacity(globalOpacityValue);
+                    }
+                    else
+                    {
+                      leftLayers[i].hide();
+                      npsbnd.show();
+                    }
+                  }
+                  else
+                  {
+                    if(i==layerNum)
+                    {
+                      rightLayers[i].show();
+                      document.getElementById("copyRightLabel").innerHTML=layerCopyRights[i];
+                      //Change active layer to active right layer selected by the user.
+                      activeLayer=rightLayers[i];
+
+                    }
+                    else
+                    {
+                      rightLayers[i].hide();
+                    }
+                  }
+                }
+              }
+
+             //Layers to be revelead will be the ones on the left side, as such they are all passed to the //swipeWidgets.
+
+            //Function to create a SwipeWidget
+            function makeSwipeWidget(type,divName){
+             var swipeWidget = new LayerSwipe({
+               type: type,  //Try switching to "scope" or "horizontal" or "vertical"
+               map: map,
+               left: screen.width/2.0,
+               layers: [left1948,left1955,left1979,left2002,left2005,left2014]
+             }, divName);
+
+              swipeWidget.startup();
+             return swipeWidget;
+           }
+
+
+          //  //Call function to restric the spanning of the map.
+          //     dojo.connect(map, "onExtentChange", showExtent);
+
+          //  //Function to limit spanning to maximum extent.
+          //  function showExtent(extent, delta, levelChange, lod) {
+
+          //       //In javascript, object passes byref. so it's not correct to difine new extent using
+          //       //"var adjustedEx = extent;"
+          //       var adjustedEx = new esri.geometry.Extent(extent.xmin, extent.ymin, extent.xmax, extent.ymax,new esri.SpatialReference(spatialRef));
+          //       var flag = false;
+          //       //set a buffer to make the max extent a slightly bigger to void minor differences
+          //       //the map unit for this case is meter.
+          //       var buffer = 10;
+          //       console.log(extent.xmin + "," + maxExtent.xmin);
+          //       var onLoadHandle = dojo.connect(activeLayer, "onUpdate", function() {
+          //         //cancel the connection because it shouldn only be triggered when extent changes. Other events causing tiles loading shoudn't trigger this.
+          //               dojo.disconnect(onLoadHandle);
+          //               if(extent.xmin < maxExtent.xmin-buffer) {
+          //           adjustedEx.xmin = maxExtent.xmin;
+          //           adjustedEx.xmax = Math.abs(extent.xmin - maxExtent.xmin) + extent.xmax;
+          //                   flag = true;
+          //               }
+          //         if(extent.ymin < maxExtent.ymin-buffer) {
+          //             adjustedEx.ymin = maxExtent.ymin;
+          //             adjustedEx.ymax = Math.abs(extent.ymin - maxExtent.ymin) + extent.ymax;
+          //                   flag = true;
+          //               }
+          //         if(extent.xmax-buffer > maxExtent.xmax) {
+          //             adjustedEx.xmax = maxExtent.xmax;
+          //             adjustedEx.xmin =extent.xmin - Math.abs(extent.xmax - maxExtent.xmax);
+          //                   flag = true;
+          //               }
+          //         if(extent.ymax-buffer > maxExtent.ymax) {
+          //             adjustedEx.ymax = maxExtent.ymax;
+          //             adjustedEx.ymin =extent.ymin - Math.abs(extent.ymax - maxExtent.ymax);
+          //                   flag = true;
+          //               }
+          //         if (flag === true) {
+          //           map.setExtent(adjustedEx);
+          //         }
+          //         flag = false;
+          //       });
+          // }
+
+
+
+
+          //Initially only the first right layer is turned on, and the first left layer is on.
+          exclusiveEnableLayer("left",0);
+          exclusiveEnableLayer("right",5);
+
+         //Widget for scalebar
+          var scalebar = new Scalebar({
+            map: map,
+            attachTo: "top-center",
+            // "dual" displays both miles and kilmometers
+            // "english" is the default, which displays miles
+            // use "metric" for kilometers
+            scalebarUnit: "dual"
+          }, dojo.byId("scalebar"));
+
+          //Widget for measurement
+          var measurement = new Measurement({
+              map: map,
+              defaultAreaUnit: esri.Units.SQUARE_MILES,
+              defaultLengthUnit: esri.Units.MILES
+          }, dom.byId("measureControl"));
+          measurement.startup();
+
+          //Showing coordinates on map
+           map.on("load", function() {
+              //Creating both the vertical swype and the "spyGlass" widgets.
+              swipeWidget=makeSwipeWidget("vertical","swipeDiv");
+              scopeWidget=makeSwipeWidget("scope","scopeDiv");
+              scopeWidget.disable();
+
+              //after map loads, connect to listen to mouse move & drag events
+              map.on("mouse-move", showCoordinates);
+              map.on("mouse-drag", showCoordinates);
+            });
+
+
+          var source = new Proj4js.Proj("EPSG:4326");
+          var dest = new Proj4js.Proj("EPSG:4326");
+
+          function showCoordinates(evt) {
+              //the map is in web mercator but display coordinates in geographic (lat, long)
+              // var mp = webMercatorUtils.webMercatorToGeographic(evt.mapPoint);
+
+              var resultPoint;
+              resultPoint = Proj4js.transform(source, dest, evt.mapPoint);
+
+              //console.log(mp);
+              //display mouse coordinates
+              // dom.byId("currentCoordinates").innerHTML = resultPoint.x.toFixed(3) + "° | " + resultPoint.y.toFixed(3)+"°";
+
+               dom.byId("currentCoordinates").innerHTML = resultPoint.y.toFixed(3) + "° | " + resultPoint.x.toFixed(3)+"°";
+          }
+
+          //Function to enable all radio buttons for either the right or left sides.
+          function enableAllRadiobuttonsRight()
+          {
+            document.getElementById("rightLayer1").disabled = false;
+            document.getElementById("rightLayer2").disabled = false;
+            document.getElementById("rightLayer3").disabled = false;
+            document.getElementById("rightLayer4").disabled = false;
+            document.getElementById("rightLayer5").disabled = false;
+            document.getElementById("rightLayer6").disabled = false;
+          }
+
+           function enableAllRadiobuttonsLeft()
+          {
+            document.getElementById("leftLayer1").disabled = false;
+            document.getElementById("leftLayer2").disabled = false;
+            document.getElementById("leftLayer3").disabled = false;
+            document.getElementById("leftLayer4").disabled = false;
+            document.getElementById("leftLayer5").disabled = false;
+            document.getElementById("leftLayer6").disabled = false;
+
+          }
+
+          //The following functions control the swipe or scope widgets.
+          $("#sliderControl").change(function(e) {
+             scopeWidget.disable();
+             swipeWidget.enable();
+
+             //Changing left and right panel titles back to "Left" and "Right"
+            document.getElementById("LeftPanelTitle").innerHTML="Left";
+            document.getElementById("RightPanelTitle").innerHTML="Right";
+
+           });
+
+           $("#scopeControl").change(function(e) {
+             swipeWidget.disable();
+             scopeWidget.enable();
+
+            //Changing left and right panel titles to "Spyglass" and "Background"
+            document.getElementById("LeftPanelTitle").innerHTML="Spyglass";
+            document.getElementById("RightPanelTitle").innerHTML="Background";
+
+           });
+
+           $("#transparencyControl").change(function(e) {
+             $('#transparencyDiv').toggle();
+
+           });
+
+          //Function to keep the measurement panel open upon selection.
+           $('.keep').on({
+                "shown.bs.dropdown": function() { this.closable = false; },
+                "click":             function() { this.closable = true; },
+                "hide.bs.dropdown":  function() { return this.closable; }
+            });
+
+           $('#measureMenu .dropdown-menu').on({
+                "click":function(e){
+                  e.stopPropagation();
+                }
+            });
+
+           $("#clearMeasurement").click(function(e) {
+                measurement.clearResult();
+            });
+
+           //The following events take care of turning on and off of the layers.
+           //Left set of radio buttons.
+           $('#leftLayer1').click(function(e) {
+                //turn of layers on left side. only turn on left layer selected.
+             enableAllRadiobuttonsRight();
+             document.getElementById("rightLayer1").disabled = true;
+
+             exclusiveEnableLayer("left",0);
+
+           });
+           $('#leftLayer2').click(function(e) {
+
+              enableAllRadiobuttonsRight();
+             document.getElementById("rightLayer2").disabled = true;
+
+             exclusiveEnableLayer("left",1);
+
+           });
+           $('#leftLayer3').click(function(e) {
+
+             enableAllRadiobuttonsRight();
+             document.getElementById("rightLayer3").disabled = true;
+
+             exclusiveEnableLayer("left",2);
+
+           });
+           $('#leftLayer4').click(function(e) {
+
+            enableAllRadiobuttonsRight();
+            document.getElementById("rightLayer4").disabled = true;
+
+            exclusiveEnableLayer("left",3);
+
+           });
+           $('#leftLayer5').click(function(e) {
+
+            enableAllRadiobuttonsRight();
+            document.getElementById("rightLayer5").disabled = true;
+
+            exclusiveEnableLayer("left",4);
+
+           });
+
+           $('#leftLayer6').click(function(e) {
+
+            enableAllRadiobuttonsRight();
+            document.getElementById("rightLayer6").disabled = true;
+
+            exclusiveEnableLayer("left",5);
+
+           });
+
+           //Right set of layers.
+            $('#rightLayer1').click(function(e) {
+
+            enableAllRadiobuttonsLeft();
+            document.getElementById("leftLayer1").disabled = true;
+
+            exclusiveEnableLayer("right",0);
+
+           });
+           $('#rightLayer2').click(function(e) {
+
+            enableAllRadiobuttonsLeft();
+            document.getElementById("leftLayer2").disabled = true;
+
+            exclusiveEnableLayer("right",1);
+
+           });
+           $('#rightLayer3').click(function(e) {
+
+            enableAllRadiobuttonsLeft();
+            document.getElementById("leftLayer3").disabled = true;
+
+            exclusiveEnableLayer("right",2);
+
+           });
+           $('#rightLayer4').click(function(e) {
+
+            enableAllRadiobuttonsLeft();
+            document.getElementById("leftLayer4").disabled = true;
+
+            exclusiveEnableLayer("right",3);
+
+           });
+           $('#rightLayer5').click(function(e) {
+
+            enableAllRadiobuttonsLeft();
+            document.getElementById("leftLayer5").disabled = true;
+
+            exclusiveEnableLayer("right",4);
+
+           });
+
+            $('#rightLayer6').click(function(e) {
+
+            enableAllRadiobuttonsLeft();
+            document.getElementById("leftLayer6").disabled = true;
+
+            exclusiveEnableLayer("right",5);
+
+           });
+
+
+
+          //Function to show the splash screen upon loading of the page.
+          // $(window).load(function(){
+          //     $('#splashModal').modal('show');
+          //   });
+
+
+          //Function to show the splash screen upon succesful login in
+          dojo.connect(left1955, "onLoad", showModal);
+          function showModal()
+          {
+            $('#splashModal').modal('show');
+          }
+
+
+
+          // Instantiating the Tour Slides Object
+          var tour = new Tour({
+            steps: [
+              {
+                element: "#LeftWindow",
+                title: "Left pane",
+                content: "Select the scenario you want to view in the left pane.",
+                // reflex: true
+              },
+              {
+                element: "#transparencyDiv",
+                placement: "right",
+                title: "Change transparency",
+                content: "Use this slider to change the transparency of the left pane.",
+                // reflex: true
+
+
+              },
+
+              {
+                element: "#RightWindow",
+                title: "Right pane",
+                content: "Select the scenario you want to view in the right pane.",
+                placement: "left",
+                // reflex:true
+              },
+              {
+                element: "#iLinkRight2014",
+                title: "Layer info",
+                content: "Click on an 'i' button to learn more about that imagery layer.",
+                placement: "left",
+                // reflex:true
+              },
+
+              {
+                element: "#transparencyControl",
+                placement: "left",
+                title: "Transparency tool",
+                content: "Click to activate or deactivate the transparency slider in the left pane.",
+                // reflex: true
+
+
+              },
+
+              {
+                element: "#scopeControl",
+                placement: "left",
+                title: "Spyglass tool",
+                content: "Drag the Spyglass to see the underlying image in different areas.",
+                // reflex: true
+
+
+              },
+               {
+                element: "#sliderControl",
+                placement: "left",
+                title: "View divider tool",
+                content: "Click here to use the 'View Divider Tool'.",
+                // reflex:true,
+
+              },
+              {
+                orphan:true,
+                // placement: "right",
+                title: "Enjoy!",
+                content: "Click 'End Tour' to begin exploring the sea level rise scenarios.",
+                onShown: function (tour) {
+
+                  $('#mapDiv').on('click', function (e) {
+                      tour.end();
+                  });
+
+                }
+
+              }
+            ],
+            storage: false,
+            template: '<div class="popover" role="tooltip" id="tourContainer"> <div class="arrow"></div> <h3 class="popover-title"></h3> <div class="popover-content"></div> <div class="popover-navigation"> <div class="btn-group"> <button class="btn btn-sm btn-default" data-role="prev">&laquo; Prev</button> <button class="btn btn-sm btn-default" data-role="next">Next &raquo;</button> <button class="btn btn-sm btn-default" data-role="pause-resume" data-pause-text="Pause" data-resume-text="Resume">Pause</button> </div> <button class="btn btn-sm btn-default" data-role="end">End tour</button>'
+            });
+
+          // Initialize the tour
+          tour.init();
+
+          // Start the tour upon finishing the splah modal
+          //$('#splashModal').on('hide.bs.modal', function (e) {
+              //tour.start();
+          //});
+
+          $('#startTourButton').on('click', function (e) {
+
+              tour.restart();
+          });
+
+
+          var opacitySlider = new dijit.form.HorizontalSlider({
+             name: "opacitySlider",
+             id: "opacitySlider",
+             value: 100,
+             minimum: 0,
+             maximum: 100,
+             discreteValues: 101,
+             intermediateChanges: true,
+             showButtons: true,
+             onChange: function(value) {
+                topLayer.setOpacity(value/100);
+                globalOpacityValue = value/100;
+             }
+          },"sliderOpacity");
+
+        });
+
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="src/js/bootstrap-tour.js"></script>
+
+  </body>
+</html>

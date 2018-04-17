@@ -1,0 +1,835 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Ho",
+				"HorizontalRuleLabels"
+			],
+			[
+				"ho",
+				"horizontalSlider"
+			],
+			[
+				"top",
+				"topLayer"
+			],
+			[
+				"right",
+				"right2014"
+			],
+			[
+				"left",
+				"left1955"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"ober",
+				"observatoriesLayers"
+			],
+			[
+				"key",
+				"keyword2"
+			],
+			[
+				"s",
+				"startyr"
+			],
+			[
+				"bas",
+				"baseMapLayer"
+			],
+			[
+				"btndra",
+				"btnDrawFreePolygon"
+			],
+			[
+				"btndr",
+				"btnDrawPolygon"
+			],
+			[
+				"menu",
+				"menuLayers"
+			],
+			[
+				"ulMen",
+				"ulMenuZoomTo"
+			],
+			[
+				"lege",
+				"legendWidget"
+			],
+			[
+				"legend",
+				"legendLayerInfos"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"es",
+				"esriConfig"
+			],
+			[
+				"meas",
+				"measureWidget"
+			],
+			[
+				"layer",
+				"layerInfos"
+			],
+			[
+				"form",
+				"formZoomTo"
+			],
+			[
+				"tim",
+				"timesliderWidget"
+			],
+			[
+				"re",
+				"resultPoint"
+			],
+			[
+				"o",
+				"overviewmap"
+			],
+			[
+				"selectio",
+				"selection-change"
+			],
+			[
+				"radi",
+				"radiation"
+			],
+			[
+				"create",
+				"createAmChart"
+			],
+			[
+				"date",
+				"dateValue"
+			],
+			[
+				"by",
+				"byId"
+			],
+			[
+				"max",
+				"maxdate"
+			],
+			[
+				"user",
+				"userInterfaceControlsData"
+			],
+			[
+				"From",
+				"FromDate1"
+			],
+			[
+				"sensor",
+				"sensorsJson"
+			],
+			[
+				"sn",
+				"sensorsArrayContainer"
+			],
+			[
+				"sen",
+				"sensorsArrayContainer"
+			],
+			[
+				"sens",
+				"sensorsJsonContainer"
+			],
+			[
+				"has",
+				"hasOwnProperty"
+			],
+			[
+				"use",
+				"userInterfaceControlsData"
+			],
+			[
+				"load",
+				"loadJSON"
+			],
+			[
+				"digi",
+				"digit1"
+			],
+			[
+				"d",
+				"digit3"
+			],
+			[
+				"di",
+				"digit2"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"amch",
+				"amChartData"
+			],
+			[
+				"data",
+				"amChartData"
+			],
+			[
+				"amChart",
+				"amChartScrollbar"
+			],
+			[
+				"amCh",
+				"amChartScrollbar"
+			],
+			[
+				"chart",
+				"chartData72_64"
+			],
+			[
+				"char",
+				"chartData71_64"
+			],
+			[
+				"chartData",
+				"chartData70_64"
+			],
+			[
+				"stock",
+				"stockPanel1"
+			],
+			[
+				"ca",
+				"callback_function"
+			],
+			[
+				"check",
+				"checkImage"
+			],
+			[
+				"info",
+				"infoWindow"
+			],
+			[
+				"Le",
+				"legendLayers"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 37749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/css/timeslider_controls.css",
+			"settings":
+			{
+				"buffer_size": 3778,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n    <link rel=\"shortcut icon\" href=\"../../bootstrap_v3/docs-assets/ico/favicon.png\">\n\n    <title>Imagery Time Viewer</title>\n\n    <!-- Bootstrap core CSS plus CSS for Navbar Icons -->\n    <link href=\"//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link href=\"//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css\" rel=\"stylesheet\">\n\n\n    <!-- Custom styles for this application -->\n    <link href=\"src/css/timeslider.css\" rel=\"stylesheet\">\n    <link href=\"src/css/timeslider_controls.css\" rel=\"stylesheet\">\n\n    <!-- Esri CSS -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"http://js.arcgis.com/3.10/js/esri/css/esri.css\"> \n    <link rel=\"stylesheet\" href=\"http://js.arcgis.com/3.11/dijit/themes/claro/claro.css\">\n    <!-- Bootstrap-map CSS -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"src/css/bootstrapmap.css\">  \n\n    <!-- Bootstrap tour CSS-->\n    <link href=\"src/css/bootstrap-tour.css\" rel=\"stylesheet\"> \n\n    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!--[if lt IE 9]>\n      <script src=\"../bootstrap_v3/docs-assets/js/html5shiv.js\"></script>\n      <script src=\"../bootstrap_v3/docs-assets/js/respond.min.js\"></script>\n    <![endif]-->\n  </head>\n  <body>\n\n\n<!--Section to create the navbar-->\n    <div class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\" style=\"border:1px solid\" id=\"navbar\">\n      <div class=\"container-fluid\" id=\"navbarContainer\">\n        <div class=\"navbar-header\" style: \"padding: 50px\">\n          <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#navbar-div1\">\n            <span class=\"sr-only\">Toggle navigation</span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n          </button>\n          <a class=\"navbar-brand\" href=\"http://barrowmapped.org/\" target=\"_blank\" style=\"padding:0px;\"><img src=\"src/images/BAIDLogo2_3.png\" style=\"width:100px;height:40px;\" class=\"img-responsive\">\n          </a>\n           <a class=\"navbar-brand\" style=\"padding-left: 30px; padding-top: 10px;\"> <font size=\"5\">Imagery Time Viewer</font>\n          </a>\n        </div>\n\n        <div class=\"navbar-collapse collapse\" id=\"navbar-div1\">\n          <ul class=\"nav navbar-nav navbar-left\">\n          </ul>\n          <ul class=\"nav navbar-nav navbar-right\">\n              <li title= \"Tour\" class=\"enabled\"> <a id=\"startTourButton\"><i class=\"fa fa-arrow-circle-up fa-lg\"></i> Tour</a></li>\n\n            <li title= \"Facebook\" class=\"enabled\"> <a href=\"https://www.facebook.com/baid.utep\" target=\"_blank\" > <i class=\"fa fa-facebook-square fa-lg\"></i> </a></li>\n\n\n            <li title= \"Youtube\" class=\"enabled\"><a href=\"https://www.youtube.com/channel/UCs3ve2zFNUSyvP7BfXLQJIA\" target=\"_blank\"><i class=\"fa fa-youtube fa-lg\"></i></a></li>\n\n            <li title= \"About\" class=\"enabled\"><a href=\"http://prodgis02.utep.edu/baidutep/about\" target=\"_blank\">About</a></li>\n\n            <li title= \"Contact\" class=\"enabled\"><a href=\"http://prodgis02.utep.edu/baidutep/contact_us\" target=\"_blank\"><span class=\"glyphicon glyphicon-comment\"></span> Contact</a></li>\n\n          </ul>\n        </div>\n      </div>\n    </div>\n    \n    <!-- Adding map to body.-->\n    <div id=\"mapDiv\">\n      <div id=\"scalebar\"></div>\n      <div id=\"swipeDiv\"></div>\n      <div id=\"scopeDiv\"></div>\n      <div id=\"currentCoordinates\"></div>\n      <div id=\"copyRightLabel\">2014 WorldView-2 Imagery © UMIAQ</div>\n      <div id=\"copyLeftLabel\">1955 BW Imagery © BAID</div>\n\n            <div class=\"panel panel-primary layer-left-panel \" id=\"LeftWindow\">\n                <div class=\"panel-heading\">\n                  <h3 class=\"panel-title\" id=\"LeftPanelTitle\">Left</h3>\n                </div>\n                <div class=\"panel-body\">\n                  <!--Form for layers-->\n                  <form role=\"form\" >\n                      <div id=\"transparencyControl\">\n                        <div>Transparency</div>\n                        <div id=\"sliderOpacity\"></div>\n                      </div>  \n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"leftLayer1\">1948-49 </label>\n                        <a href=\"metadata_pages/summary_1948_1949_BAR_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" ></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"leftLayer2\" checked>      1955       </label>\n                        <a href=\"metadata_pages/summary_1955_BW_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\" ></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"leftLayer3\">1979    </label>\n                        <a href=\"metadata_pages/summary_1979_AHAP_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"leftLayer4\">2002   </i></label>\n                        <a href=\"metadata_pages/summary_2002_QB_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"leftLayer5\">2005    </i></label>\n                        <a href=\"metadata_pages/summary_2005_DOQ_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"leftLayer6\" disabled>2014  </i></label>\n                        <a href=\"metadata_pages/summary_2014_WV2_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                  </form>\n                </div>\n            </div>\n\n            <div class=\"panel panel-primary layer-right-panel \" id=\"RightWindow\">\n                <div class=\"panel-heading\">\n                  <h3 class=\"panel-title\" id=\"RightPanelTitle\">Right</h3>\n                </div>\n                <div class=\"panel-body\">\n                  <!--Form for layers-->\n                   <form role=\"form\">\n                     <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"rightLayer1\">1948-49  </label>\n                          <a href=\"metadata_pages/summary_1948_1949_BAR_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"rightLayer2\"  disabled>1955   </label >\n                          <a href=\"metadata_pages/summary_1955_BW_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"rightLayer3\">1979   </label>\n                        <a href=\"metadata_pages/summary_1979_AHAP_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"rightLayer4\">2002   </label>\n                        <a href=\"metadata_pages/summary_2002_QB_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"rightLayer5\">2005   </label>\n                        <a href=\"metadata_pages/summary_2005_DOQ_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                      <div class=\"radio\">\n                        <label><input type=\"radio\" name=\"optradio\" id=\"rightLayer6\" checked>2014  </label>\n                        <a href=\"metadata_pages/summary_2014_WV2_imagery.html\" target=\"_blank\"><i class=\"fa fa-info-circle\" id=\"iLinkRight2014\" style=\"text-indent: 1.5em;\"></i></a>\n                      </div>\n                  </form>\n                </div>\n            </div>\n            <div class=\"btn-group-vertical buttons-vertical-right\">\n              <div class=\"btn-group\">\n                <button class=\"btn btn-default dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\" id=\"sliderControl\" title=\"Divider\"><i class=\"fa fa-columns fa-lg\"></i></button>                \n              </div>\n              <div class=\"btn-group\" >\n                <button class=\"btn btn-default dropdown-toggle\" type=\"button\" data-toggle=\"droodown\" id=\"scopeControl\" title=\"Spyglass\"><i class=\"fa fa-circle-o fa-lg\"></i></button>\n              </div>\n              <div class=\"btn-group\" >\n                <button class=\"btn btn-default dropdown-toggle \" type=\"button\" data-toggle=\"button\" id=\"transparencyControl\" title=\"Transparency\"><i class=\"fa fa-eye fa-lg\"></i></button>\n              </div>\n            </div>\n      </div>\n\n  <div class=\"modal fade\" id=\"print-modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header\">\n            <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\n            <h4 class=\"modal-title\" id=\"myModalLabel\">Print</h4>\n          </div>\n          <div class=\"modal-body\">\n            <form id=\"formPrint\"> \n              <div>\n                <div id=\"printModal\">\n                </div>\n              </div>\n            </form>\n          </div>\n          <div class=\"modal-footer\">\n            <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    </div><!--Map Div close-->\n\n<!--Modal to function as Splash/Welcome screen. Displays message for user.-->\n<div class=\"modal fade\" id=\"splashModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header \" id=\"splashHeader\">\n            <h3 class=\"modal-title\" id=\"splashTitle\"><img src=\"src/images/BAIDLogo2_3.png\" style=\"width:100px;height:40px;\">Imagery Time Viewer <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button></h3>\n\n          </div>\n          <div class=\"modal-body\" id=\"splashContent\">\n              <h4 >View historical imagery as a window to Barrow’s past.  </h4>\n              <!-- <h4 >Move divider left or right to view changes through time.</h4> -->\n              <!-- <p>Click 'End Tour' to begin exploring Barrow through time.</p> -->\n              <h4>Note: This application <u>will not</u> function properly in Internet Explorer.</h4>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!--Script to set the path to Bootstrap map src/js folder-->\n    <script type=\"text/javascript\">\n      var package_path = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));\n      var dojoConfig = {\n          //T he location.pathname.replace() logic below may look confusing but all its doing is\n          // enabling us to load the api from a CDN and load local modules from the correct location.\n          packages: [{\n              name: \"application\",\n              location: package_path + '../../../src/js'\n          }]\n      };\n    </script>\n\n   <!--Script to make an arcGIS map. -->\n    <script src=\"http://js.arcgis.com/3.11\"></script>\n    <script src=\"src/js/proj4js-compressed.js\"></script>\n    <script>\n\n        var swipeWidget;\n        var scopeWidget;\n\n        require([\"esri/map\", \n          \"esri/dijit/LayerSwipe\",\n          \"esri/arcgis/utils\",\n          \"dojo/_base/array\",\n          \"esri/SpatialReference\",\n          \"esri/layers/ArcGISTiledMapServiceLayer\",\n          \"esri/layers/ArcGISDynamicMapServiceLayer\",\n          \"esri/layers/FeatureLayer\", \n          \"application/bootstrapmap\", \n          \"esri/dijit/Legend\",\n          \"dojo/_base/array\",\n          \"esri/geometry/webMercatorUtils\",\n          \"esri/dijit/Scalebar\",\n          \"dojo/_base/lang\",\n        \n          //Libraries for Measurement\n          \"esri/dijit/Measurement\",\n          \"esri/renderers/SimpleRenderer\",\n          \"esri/tasks/GeometryService\",\n          \"esri/symbols/SimpleLineSymbol\",\n          \"esri/symbols/SimpleFillSymbol\",\n          \"esri/Color\",\n          \"dojo/keys\",\n          \"dojo/parser\",\n          \"esri/config\",\n          \"esri/sniff\",\n          \"esri/SnappingManager\",\n          \"dojo/dom\",\n          \"dijit/registry\",\n          \"dijit/form/HorizontalSlider\",\n          \"dijit/form/HorizontalRule\",\n          \"dijit/form/HorizontalRuleLabels\",\n          \"dojo/domReady!\"],\n          function(Map, LayerSwipe, arcgisUtils, array, SpatialReference, ArcGISTiledMapServiceLayer, ArcGISDynamicMapServiceLayer, FeatureLayer, BootstrapMap, Legend, arrayUtils,webMercatorUtils, Scalebar,lang,Measurement,SimpleRenderer, GeometryService, SimpleLineSymbol, SimpleFillSymbol, Color, keys, parser, esriConfig, has, SnappingManager, dom, registry) {   \n            \n            parser.parse();\n        \n          esriConfig.defaults.io.proxyUrl = \"http://irpsrvgis25.utep.edu/DotNet/proxy.ashx\";\n          esriConfig.defaults.io.alwaysUseProxy = true;\n\n          esriConfig.defaults.geometryService = new GeometryService(\"http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer\");\n\n            //Spatial reference for this map. \n            var spatialRef = new SpatialReference({\"wkid\":3338});\n\n            //Initial extent of the map. \n            var startExtent = new esri.geometry.Extent(-318969.84967939122, 2330586.3891965556, 115896.85935070922, 2404551.005250067,\n            new esri.SpatialReference(spatialRef) );\n\n            //Max Extenent to limit the panning of the map. \n            //  var maxExtent = new esri.geometry.Extent(-123445.000, 2339125.000, -68485.000, 2380345.000,\n            // new esri.SpatialReference(spatialRef));\n\n              var maxExtent = new esri.geometry.Extent(-134806.098, 2330656.766, -57812.194, 2387330.63,\n            new esri.SpatialReference(spatialRef));\n\n            //Levels of detail for layers. \n             var lods = [ \n                {\n                  \"level\": 6,\n                  \"resolution\": 66.1459656252646,\n                  \"scale\":  250000\n                },\n                {\n                  \"level\": 7,\n                  \"resolution\": 33.0729828126323,\n                  \"scale\": 125000\n                },\n                {\n                  \"level\": 8,\n                  \"resolution\": 16.764033528067056,\n                  \"scale\": 63360\n                }\n                , {\n                  \"level\": 9,\n                  \"resolution\": 6.350012700025401,\n                  \"scale\": 24000\n                },\n                 {\n                  \"level\": 10,\n                  \"resolution\": 3.1750063500127004,\n                  \"scale\":  12000\n                }\n                , {\n                  \"level\": 11,\n                  \"resolution\": 1.5875031750063502,\n                  \"scale\": 6000\n                }\n                , {\n                  \"level\": 12,\n                  \"resolution\": 0.7937515875031751,\n                  \"scale\": 3000\n                }\n                , {\n                  \"level\": 13,\n                  \"resolution\": 0.39687579375158755,\n                  \"scale\": 1500\n                }\n                , {\n                  \"level\": 14,\n                  \"resolution\": 0.19843789687579377,\n                  \"scale\": 750\n                }\n                ];\n\n            // Get a reference to the ArcGIS Map class\n            var map = BootstrapMap.create(\"mapDiv\", {\n               extent: startExtent,\n                zoom: 3,\n                lods: lods,\n                spatialReference: spatialRef,\n               logo:false,\n               showAttribution: false,\n             });  \n\n            //*****************Portion of code to control layers*****************//\n\n            //Array with names for the variables, currently includes from 1955 to 2014, more to come.\n            var layerCopyRights=[\n                \"1948-1949 BW Imagery  © BAID\",\n                \"1955 BW Imagery © BAID\",\n                \"1979 AHAP Imagery © ALCC\",\n                \"2002 QuickBird Imagery © Univ. of CO\",\n                \"2005 NPRA DOQ Imagery © USGS\",\n               \"2014 DigitalGlobe Imagery © Ukpeaġvik Iñupiat Corporation\"\n            ];\n\n\n            var left1948 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_1948_1949_NARL_BAR_ua3/MapServer\");\n\n             var left1955 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_1955_BW_BAID/MapServer\");\n\n             var left1979 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_1979_AHAP_ALCC/MapServer\");\n\n             var left2002 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_2002_QB/MapServer\");\n\n             var left2005 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_2005_NPRA_DOQ/MapServer\");\n\n             var left2014 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_2014_RGB_eTerra_ua3/MapServer\");\n\n             var leftLayers=[left1948,left1955,left1979,left2002,left2005,left2014];\n\n              var right1948 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_1948_1949_NARL_BAR_ua3/MapServer\");\n\n             var right1955 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_1955_BW_BAID/MapServer\");\n\n             var right1979 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_1979_AHAP_ALCC/MapServer\");\n\n             var right2002 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_2002_QB/MapServer\");\n\n             var right2005 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_2005_NPRA_DOQ/MapServer\");\n\n             var right2014 = new ArcGISTiledMapServiceLayer(\"http://sel-gis06.utep.edu/arcgis/rest/services/Alaska/b_imagery_2014_RGB_eTerra_ua3/MapServer\");\n\n              var rightLayers=[right1948,right1955,right1979,right2002,right2005,right2014];\n\n              //Add both sets of layers to the map (right and left).\n              map.addLayers(rightLayers);\n              map.addLayers(leftLayers);\n\n              //Variable to keep track of the active layer on the right (bottom layer of layerswype widget)\n              var activeLayer = right2014;\n\n              //Variable to keep track of the top layer on the left (top layer of layerswype widget)\n              var topLayer = left1955;\n\n              //Opacity value for left layer\n              var globalOpacityValue = 100;\n\n               //Function to turn on only one layer, in either the left or right side. \n              function exclusiveEnableLayer(side,layerNum)\n              {\n                for (i=0;i<6;i++)\n                {\n                  if(side===\"left\")\n                  {\n                    if(i==layerNum)\n                    {\n                      leftLayers[i].show();\n                      //Also enable specific copyright\n                      document.getElementById(\"copyLeftLabel\").innerHTML=layerCopyRights[i];\n                      topLayer=leftLayers[i];\n                      leftLayers[i].setOpacity(globalOpacityValue);\n                    }\n                    else\n                    {\n                      leftLayers[i].hide();\n                    }\n                  }\n                  else\n                  {\n                    if(i==layerNum)\n                    {\n                      rightLayers[i].show();\n                      document.getElementById(\"copyRightLabel\").innerHTML=layerCopyRights[i];\n                      //Change active layer to active right layer selected by the user. \n                      activeLayer=rightLayers[i];\n\n                    }  \n                    else\n                    {\n                      rightLayers[i].hide();\n                    }\n                  }\n                }\n              }\n\n             //Layers to be revelead will be the ones on the left side, as such they are all passed to the //swipeWidgets.\n\n            //Function to create a SwipeWidget\n            function makeSwipeWidget(type,divName){\n             var swipeWidget = new LayerSwipe({\n               type: type,  //Try switching to \"scope\" or \"horizontal\" or \"vertical\"\n               map: map,\n               left: screen.width/2.0,\n               layers: [left1948,left1955,left1979,left2002,left2005,left2014]\n             }, divName);\n\n              swipeWidget.startup();\n             return swipeWidget;\n           }\n\n\n          //  //Call function to restric the spanning of the map.\n          //     dojo.connect(map, \"onExtentChange\", showExtent);\n\n          //  //Function to limit spanning to maximum extent. \n          //  function showExtent(extent, delta, levelChange, lod) {\n\n          //       //In javascript, object passes byref. so it's not correct to difine new extent using\n          //       //\"var adjustedEx = extent;\"\n          //       var adjustedEx = new esri.geometry.Extent(extent.xmin, extent.ymin, extent.xmax, extent.ymax,new esri.SpatialReference(spatialRef));\n          //       var flag = false; \n          //       //set a buffer to make the max extent a slightly bigger to void minor differences\n          //       //the map unit for this case is meter. \n          //       var buffer = 10;\n          //       console.log(extent.xmin + \",\" + maxExtent.xmin);\n          //       var onLoadHandle = dojo.connect(activeLayer, \"onUpdate\", function() {\n          //         //cancel the connection because it shouldn only be triggered when extent changes. Other events causing tiles loading shoudn't trigger this.\n          //               dojo.disconnect(onLoadHandle);\n          //               if(extent.xmin < maxExtent.xmin-buffer) {\n          //           adjustedEx.xmin = maxExtent.xmin;\n          //           adjustedEx.xmax = Math.abs(extent.xmin - maxExtent.xmin) + extent.xmax;\n          //                   flag = true;\n          //               }\n          //         if(extent.ymin < maxExtent.ymin-buffer) {\n          //             adjustedEx.ymin = maxExtent.ymin;\n          //             adjustedEx.ymax = Math.abs(extent.ymin - maxExtent.ymin) + extent.ymax;\n          //                   flag = true;\n          //               }\n          //         if(extent.xmax-buffer > maxExtent.xmax) {\n          //             adjustedEx.xmax = maxExtent.xmax;\n          //             adjustedEx.xmin =extent.xmin - Math.abs(extent.xmax - maxExtent.xmax);\n          //                   flag = true;\n          //               }\n          //         if(extent.ymax-buffer > maxExtent.ymax) {\n          //             adjustedEx.ymax = maxExtent.ymax;\n          //             adjustedEx.ymin =extent.ymin - Math.abs(extent.ymax - maxExtent.ymax);\n          //                   flag = true;\n          //               }\n          //         if (flag === true) {\n          //           map.setExtent(adjustedEx);        \n          //         }\n          //         flag = false;\n          //       });   \n          // }\n      \n\n          \n\n          //Initially only the first right layer is turned on, and the second left layer is on. \n          exclusiveEnableLayer(\"left\",1);\n          exclusiveEnableLayer(\"right\",5);\n\n         //Widget for scalebar\n          var scalebar = new Scalebar({\n            map: map,\n            attachTo: \"top-center\",\n            // \"dual\" displays both miles and kilmometers\n            // \"english\" is the default, which displays miles\n            // use \"metric\" for kilometers\n            scalebarUnit: \"dual\"\n          }, dojo.byId(\"scalebar\"));\n\n          //Widget for measurement\n          var measurement = new Measurement({\n              map: map,\n              defaultAreaUnit: esri.Units.SQUARE_MILES,\n              defaultLengthUnit: esri.Units.MILES\n          }, dom.byId(\"measureControl\"));\n          measurement.startup();\n\n          //Showing coordinates on map\n           map.on(\"load\", function() {\n              //Creating both the vertical swype and the \"spyGlass\" widgets. \n              swipeWidget=makeSwipeWidget(\"vertical\",\"swipeDiv\");\n              scopeWidget=makeSwipeWidget(\"scope\",\"scopeDiv\");\n              scopeWidget.disable();\n\n              //after map loads, connect to listen to mouse move & drag events\n              map.on(\"mouse-move\", showCoordinates);\n              map.on(\"mouse-drag\", showCoordinates);\n            });\n\n\n          var source = new Proj4js.Proj(\"EPSG:3338\");\n          var dest = new Proj4js.Proj(\"EPSG:4326\");\n\n          function showCoordinates(evt) {\n              //the map is in web mercator but display coordinates in geographic (lat, long)\n              // var mp = webMercatorUtils.webMercatorToGeographic(evt.mapPoint);\n\n              var resultPoint;\n              resultPoint = Proj4js.transform(source, dest, evt.mapPoint);\n\n              //console.log(mp);\n              //display mouse coordinates\n              // dom.byId(\"currentCoordinates\").innerHTML = resultPoint.x.toFixed(3) + \"° | \" + resultPoint.y.toFixed(3)+\"°\";\n\n               dom.byId(\"currentCoordinates\").innerHTML = resultPoint.y.toFixed(3) + \"° | \" + resultPoint.x.toFixed(3)+\"°\";  \n          }\n\n          //Function to enable all radio buttons for either the right or left sides. \n          function enableAllRadiobuttonsRight()\n          {\n            document.getElementById(\"rightLayer1\").disabled = false;\n            document.getElementById(\"rightLayer2\").disabled = false;\n            document.getElementById(\"rightLayer3\").disabled = false;\n            document.getElementById(\"rightLayer4\").disabled = false;\n            document.getElementById(\"rightLayer5\").disabled = false;\n            document.getElementById(\"rightLayer6\").disabled = false;\n          }\n\n           function enableAllRadiobuttonsLeft()\n          {\n            document.getElementById(\"leftLayer1\").disabled = false;\n            document.getElementById(\"leftLayer2\").disabled = false;\n            document.getElementById(\"leftLayer3\").disabled = false;\n            document.getElementById(\"leftLayer4\").disabled = false;\n            document.getElementById(\"leftLayer5\").disabled = false;\n            document.getElementById(\"leftLayer6\").disabled = false;\n            \n          }\n   \n          //The following functions control the swipe or scope widgets. \n          $(\"#sliderControl\").click(function(e) {\n             scopeWidget.disable();\n             swipeWidget.enable();\n\n             //Changing left and right panel titles back to \"Left\" and \"Right\"\n            document.getElementById(\"LeftPanelTitle\").innerHTML=\"Left\";\n            document.getElementById(\"RightPanelTitle\").innerHTML=\"Right\";\n\n           });\n\n           $(\"#scopeControl\").click(function(e) {\n             swipeWidget.disable();\n             scopeWidget.enable();\n\n            //Changing left and right panel titles to \"Spyglass\" and \"Background\"\n            document.getElementById(\"LeftPanelTitle\").innerHTML=\"Spyglass\";\n            document.getElementById(\"RightPanelTitle\").innerHTML=\"Background\";\n\n           });\n\n           $(\"#transparencyControl\").click(function(e) {\n             //transparencyControl.toggle();\n             \n           });\n\n          //Function to keep the measurement panel open upon selection.\n           $('.keep').on({\n                \"shown.bs.dropdown\": function() { this.closable = false; },\n                \"click\":             function() { this.closable = true; },\n                \"hide.bs.dropdown\":  function() { return this.closable; }\n            });\n\n           $('#measureMenu .dropdown-menu').on({\n                \"click\":function(e){\n                  e.stopPropagation();\n                }\n            });\n\n           $(\"#clearMeasurement\").click(function(e) {\n                measurement.clearResult();\n            });\n\n           //The following events take care of turning on and off of the layers. \n           //Left set of radio buttons. \n           $('#leftLayer1').click(function(e) {\n                //turn of layers on left side. only turn on left layer selected.  \n             enableAllRadiobuttonsRight();\n             document.getElementById(\"rightLayer1\").disabled = true;\n\n             exclusiveEnableLayer(\"left\",0);\n\n           });\n           $('#leftLayer2').click(function(e) {\n\n              enableAllRadiobuttonsRight();\n             document.getElementById(\"rightLayer2\").disabled = true;\n\n             exclusiveEnableLayer(\"left\",1);\n\n           });\n           $('#leftLayer3').click(function(e) {\n\n             enableAllRadiobuttonsRight();\n             document.getElementById(\"rightLayer3\").disabled = true;\n\n             exclusiveEnableLayer(\"left\",2);\n\n           });\n           $('#leftLayer4').click(function(e) {\n\n            enableAllRadiobuttonsRight();\n            document.getElementById(\"rightLayer4\").disabled = true;\n\n            exclusiveEnableLayer(\"left\",3);\n\n           });\n           $('#leftLayer5').click(function(e) {\n\n            enableAllRadiobuttonsRight();\n            document.getElementById(\"rightLayer5\").disabled = true;\n\n            exclusiveEnableLayer(\"left\",4);\n\n           });\n\n           $('#leftLayer6').click(function(e) {\n\n            enableAllRadiobuttonsRight();\n            document.getElementById(\"rightLayer6\").disabled = true;\n\n            exclusiveEnableLayer(\"left\",5);\n\n           });\n\n           //Right set of layers. \n            $('#rightLayer1').click(function(e) {\n\n            enableAllRadiobuttonsLeft();\n            document.getElementById(\"leftLayer1\").disabled = true;\n\n            exclusiveEnableLayer(\"right\",0);\n\n           });\n           $('#rightLayer2').click(function(e) {\n\n            enableAllRadiobuttonsLeft();\n            document.getElementById(\"leftLayer2\").disabled = true;\n\n            exclusiveEnableLayer(\"right\",1);\n\n           });\n           $('#rightLayer3').click(function(e) {\n\n            enableAllRadiobuttonsLeft();\n            document.getElementById(\"leftLayer3\").disabled = true;\n\n            exclusiveEnableLayer(\"right\",2);\n\n           });\n           $('#rightLayer4').click(function(e) {\n\n            enableAllRadiobuttonsLeft();\n            document.getElementById(\"leftLayer4\").disabled = true;\n\n            exclusiveEnableLayer(\"right\",3);\n\n           });\n           $('#rightLayer5').click(function(e) {\n\n            enableAllRadiobuttonsLeft();\n            document.getElementById(\"leftLayer5\").disabled = true;\n\n            exclusiveEnableLayer(\"right\",4);\n\n           });\n\n            $('#rightLayer6').click(function(e) {\n\n            enableAllRadiobuttonsLeft();\n            document.getElementById(\"leftLayer6\").disabled = true;\n\n            exclusiveEnableLayer(\"right\",5);\n\n           });\n\n\n\n          //Function to show the splash screen upon loading of the page.\n          // $(window).load(function(){\n          //     $('#splashModal').modal('show');\n          //   });\n\n\n          //Function to show the splash screen upon succesful login in \n          dojo.connect(left1955, \"onLoad\", showModal);\n          function showModal()\n          {\n            $('#splashModal').modal('show');\n          }\n\n\n\n          // Instantiating the Tour Slides Object\n          var tour = new Tour({\n            steps: [\n              {\n                element: \"#LeftWindow\",\n                title: \"Left pane\",\n                content: \"Select the year you want to view in the left pane.\",\n                // reflex: true\n              },\n              {\n                element: \"#RightWindow\",\n                title: \"Right pane\",\n                content: \"Select the year you want to view in the right pane.\",\n                placement: \"left\",\n                // reflex:true\n              },\n              {\n                element: \"#iLinkRight2014\",\n                title: \"Layer info\",\n                content: \"Click on an 'i' button to learn more about that imagery layer.\",\n                placement: \"left\",\n                // reflex:true\n              },\n              {\n                element: \"#scopeControl\",\n                placement: \"left\",\n                title: \"Spyglass Tool\",\n                content: \"Drag the Spyglass to see the underlying image in different areas.\",\n                // reflex: true\n\n\n              },\n               {\n                element: \"#sliderControl\",\n                placement: \"left\",\n                title: \"View Divider Tool\",\n                content: \"Click here to use the 'View Divider Tool'.\",\n                // reflex:true,\n\n              },\n              {\n                orphan:true,\n                // placement: \"right\",\n                title: \"Enjoy!\",\n                content: \"Click 'End Tour' to begin exploring the Barrow area through time.\",\n                onShown: function (tour) {\n\n                  $('#mapDiv').on('click', function (e) {\n                      tour.end();\n                  });\n\n                }   \n                \n              }\n            ],\n            storage: false,\n            template: '<div class=\"popover\" role=\"tooltip\" id=\"tourContainer\"> <div class=\"arrow\"></div> <h3 class=\"popover-title\"></h3> <div class=\"popover-content\"></div> <div class=\"popover-navigation\"> <div class=\"btn-group\"> <button class=\"btn btn-sm btn-default\" data-role=\"prev\">&laquo; Prev</button> <button class=\"btn btn-sm btn-default\" data-role=\"next\">Next &raquo;</button> <button class=\"btn btn-sm btn-default\" data-role=\"pause-resume\" data-pause-text=\"Pause\" data-resume-text=\"Resume\">Pause</button> </div> <button class=\"btn btn-sm btn-default\" data-role=\"end\">End tour</button>'\n            });\n\n          // Initialize the tour\n          tour.init();\n\n          // Start the tour upon finishing the splah modal\n          $('#splashModal').on('hide.bs.modal', function (e) {\n              tour.start();\n          });\n\n          $('#startTourButton').on('click', function (e) {\n\n              tour.restart();\n          });\n\n\n          var opacitySlider = new dijit.form.HorizontalSlider({\n             name: \"opacitySlider\",\n             id: \"opacitySlider\",\n             value: 100,\n             minimum: 0,\n             maximum: 100,\n             discreteValues: 101,\n             intermediateChanges: true,\n             showButtons: true,\n             onChange: function(value) {\n                topLayer.setOpacity(value/100);\n                globalOpacityValue = value/100;\n             }\n          },\"sliderOpacity\");\n\n         \n\n        \n        });\n\n    </script>\n    \n    <!-- Bootstrap core JavaScript\n    ================================================== -->\n    <!-- Placed at the end of the document so the pages load faster -->\n    <script src=\"http://code.jquery.com/jquery-1.11.1.min.js\"></script>\n    <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>\n    <script src=\"src/js/bootstrap-tour.js\"></script>\n\n  </body>\n</html>\n\n",
+			"settings":
+			{
+				"buffer_size": 36304,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/css/bootstrapmap.css",
+			"settings":
+			{
+				"buffer_size": 5587,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/akassin/Documents/jsProjects/baid_imagery",
+		"/Users/akassin/Documents/jsProjects/baid_imagery/src",
+		"/Users/akassin/Documents/jsProjects/baid_imagery/src/css"
+	],
+	"file_history":
+	[
+		"/Users/akassin/Documents/jsProjects/baid_imagery/src/css/bootstrapmap.css",
+		"/Users/akassin/Documents/Solr Instances/ARMAP/example/solr/collection1/conf/velocity/README.txt",
+		"/Users/akassin/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/akassin/Documents/Solr Instances/ARMAP/LICENSE.txt",
+		"/Users/akassin/Documents/PublicFolder/content",
+		"/Users/akassin/Desktop/ARMAP Solr/JsonExample.txt",
+		"/Users/akassin/Desktop/ARMAP Solr/JsonExample.json",
+		"/Users/akassin/Documents/jsProjects/AOV/aov/static/js/sel/TOC.js",
+		"/Users/akassin/Documents/jsProjects/AOV/aov/static/js/sel/TOC/templates/tocNode.html",
+		"/Users/akassin/Desktop/xml task/ProjectExamples/ProjectAgregate.xml",
+		"/Users/akassin/Documents/jsProjects/XML_CollectionSites/data/output_5116.xml",
+		"/Users/akassin/Documents/jsProjects/baid_imagery_secured/index.html",
+		"/Users/akassin/Documents/jsProjects/baid_imagery/index.html",
+		"/Users/akassin/Documents/jsProjects/Timeslider BAID map/index.html",
+		"/Users/akassin/Documents/repos/baid/static/css/dashboard.css",
+		"/Users/akassin/Documents/repos/baid/static/css/baid-popout.css",
+		"/Users/akassin/Documents/repos/baid/templates/test.html",
+		"/Users/akassin/Documents/repos/baid/static/js/sel/TOC.js",
+		"/Users/akassin/Documents/repos/baid/static/css/bootstrap.min.css",
+		"/Users/akassin/Documents/repos/baid/static/css/bootstrap.css",
+		"/Users/akassin/Desktop/BAID_Keywords/Unique gmcd keywords from internet",
+		"/Users/akassin/Desktop/BAID_Keywords/Unique keywords from baid txt file",
+		"/Users/akassin/Desktop/new_gmcd.txt",
+		"/Users/akassin/Documents/jsProjects/BAID7/baid_7/.web.py.swp",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/TOC.js",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/TOC/templates/tocNode.html",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Print/templates/PrintResult.html",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Print/templates/Print.html",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Timeslider/templates/Timeslider.html",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Timeslider/css/Timeslider.css",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Timeslider.js",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/TOC/css/TOC.css",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Draw.js",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Draw/css/Draw.css",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/js/sel/Draw/templates/Draw.html",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/css/test.css",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/templates/test.css",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/css/Draw.css",
+		"/Users/akassin/Documents/jsProjects/bootstrap/baid_5/static/css/bootstrap.css",
+		"/Users/akassin/Documents/jsProjects/NEW_BAID/baid_4/static/js/app/config.js",
+		"/Users/akassin/Documents/jsProjects/NEW_BAID/baid_4/static/js/app/controller.js",
+		"/Users/akassin/Downloads/AOVViewer_JS/viewer/js/gis/dijit/Help/templates/HelpDialog.html",
+		"/Users/akassin/Downloads/AOVViewer_JS/viewer/js/gis/dijit/3.7DirectionsPatch.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Print.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Print/templates/PrintResult.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/TOC/templates/tocNode.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/TOC.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Draw.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/solr/Solr.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Basemaps/templates/Basemaps.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Print/templates/Print.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/extras/proj4jsCompressed2.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/extras/proj4jsCompressed.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/ZoomTo/css/ZoomTo.css",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/solr/_SolrSearchForm.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Draw/templates/Draw.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Print/css/Print.css",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/ZoomTo/ZoomTo.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Basemaps.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/solr/templates/solr_search.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/ZoomTo/templates/ZoomToForm.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Draw/css/Draw.css",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/ZoomTo/templates/ZoomtoForm.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/ZoomTo/css/Zoomto.css",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/solr/templates/solr_document.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/solr/templates/solr_result_documents.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/solr/templates/solr_page_nav.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/sel/solr/templates/solr_hl_document.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/app/templates/mapOverlay.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Growler.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/gis/dijit/Growler/templates/Growl.html",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/app/Controller.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/app/config.js",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/static/js/app/.config.js.swp",
+		"/Users/akassin/Documents/jsProjects/BAID/web/baid_1/templates/index.html",
+		"/Users/akassin/Documents/EndpointData/content",
+		"/Users/akassin/Google Drive/AOV/Data/NOAA_IASOA/0. All Observatories xml/gov.noaa.iasoa.obs.abisko.xml",
+		"/Users/akassin/Desktop/content",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/testData.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/testData",
+		"/Users/akassin/Documents/jsProjects/Jornada/jsonptest.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/index.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/lineCharts.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/barCharts.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/css/global.css",
+		"/Users/akassin/Documents/jsProjects/Jornada/css/green.css",
+		"/Users/akassin/Documents/jsProjects/Jornada/css/reset.css",
+		"/Users/akassin/Documents/jsProjects/Jornada/css/customSEL.css",
+		"/Users/akassin/Documents/jsProjects/Jornada/css/960.css",
+		"/Users/akassin/Documents/jsProjects/Jornada/css/blue.css",
+		"/Users/akassin/Documents/jsProjects/Jornada/testSoftCons.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/heatmapCharts.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/pptsoilmoisture.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/heatmap.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/chartsPage.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/untitled.tex",
+		"/Users/akassin/Documents/jsProjects/Jornada/dojoTest.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/jsonTest.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/notes.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/test2.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/test3.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/test.html",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/test.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/GetDailySoilMoistPptDataForStockchart_72.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/GetDailySoilMoistPptDataForStockchart_71.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/GetDailySoilMoistPptDataForStockchart_70.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/gridData69to70_64.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/GetDailySoilMoistPptDataForStockchart_69.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/GetDailyPrecipBySensor_64.txt",
+		"/Users/akassin/Documents/jsProjects/Jornada/storedData/GetDailyPrecipBySensor_45.txt",
+		"/Users/akassin/Documents/Notes/vsphereClient_Web",
+		"/Users/akassin/Documents/jsProjects/Jornada/css/red.css",
+		"/Users/akassin/Documents/jsProjects/Jornada/pptSoilMoisture.html",
+		"/Users/akassin/Documents/jsProjects/HealthcareFacilities/editTest.html",
+		"/Users/akassin/Documents/jsProjects/HealthcareFacilities/test2.html",
+		"/Users/akassin/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"48-49",
+			"48",
+			"makeSwipeWidget",
+			"sliderControl",
+			"buttons-vertical-right",
+			"scopeCont",
+			"activeLayer",
+			"registry",
+			"locatio",
+			"dynamic",
+			"location",
+			"coord",
+			"MA147LL/A",
+			"title",
+			"measurementDiv",
+			"data coll",
+			"OR",
+			"baidPopout",
+			"print-modal",
+			"example/",
+			"researc",
+			"load",
+			"baid-pop",
+			"Popup",
+			"baidPopout",
+			"baid-pop",
+			"baidPopout",
+			"img-thumbnail",
+			"baid-pop",
+			"template",
+			"src",
+			"layer",
+			"Zoom",
+			"navbar-form",
+			"solr",
+			"solr_attribs_defaults",
+			"dtl-link",
+			"solr",
+			"renderSite",
+			"idsRef",
+			"mouse",
+			"btnDrawClearDrawings",
+			"btnM",
+			".panel-body",
+			".btn-group",
+			"glyphicons.less",
+			"glyphicons-halflings-regular",
+			"consol",
+			"csv",
+			"3.9",
+			".h6",
+			"down",
+			"console",
+			"solr",
+			"rootLayer",
+			"year-filter",
+			"role=\"tooltip\"",
+			"role=tooltip",
+			"tooltip",
+			"basemapList",
+			"yr-slider",
+			"basemaps",
+			"ready",
+			".dropdown-menu",
+			"hybrid",
+			"map",
+			"web",
+			"solr_attribs_to_query",
+			"map",
+			"renderer",
+			"authorText",
+			"mapQualityForm",
+			"layoutForm",
+			"layout",
+			"layoutDijit",
+			"format",
+			"Measurement_graphicslayer",
+			"defaultFormat",
+			"format",
+			"formatDijit",
+			"printTask",
+			"printTaskURL",
+			"proxy",
+			"preserve",
+			"printSettingsFormDijit",
+			"preserveScale",
+			"contact-modal",
+			"legendDiv",
+			"ex1",
+			"placeAt",
+			"slider",
+			"parser",
+			"form",
+			"Oceans",
+			"panel panel-default",
+			"col-xs-12 col-sm-9",
+			"basemapList",
+			"form-group",
+			"input-group",
+			"form-control",
+			"data?",
+			"defs",
+			"map",
+			"printSettingsFormDijit",
+			"searchTextBox",
+			"printSettingsFormDijit",
+			"TOCTP",
+			"legendTP",
+			"_createTitlePane",
+			"templateString",
+			"drawTemplate",
+			"PrintResult",
+			"gis_DrawDijit",
+			"sidebarCollapseButton",
+			"growler",
+			"toc",
+			"dll",
+			"Selector",
+			"dataima",
+			"chartdiv",
+			"amChartdiv",
+			"zoomAmChart",
+			"stock",
+			"data_list",
+			"'",
+			"data_list",
+			"chartdiv1",
+			"showCoordinates"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sel_ZoomToDijit",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1566,
+								1566
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/css/timeslider_controls.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3468,
+								3468
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1950.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36304,
+								36304
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/akassin/Documents/jsProjects/baid_imagery",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11400.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/css/bootstrapmap.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								558,
+								558
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "baidimagery.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 313.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
