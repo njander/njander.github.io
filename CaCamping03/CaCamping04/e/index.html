@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camping in California</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
+
+    <link rel="stylesheet" href="../css/leaflet-sidebar.css" />
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body, #map {
+            height: 100%;
+            font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+        }
+
+        .lorem {
+            font-style: italic;
+            color: #AAA;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar" class="sidebar expanded">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+                <!--li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
+                <li class="disabled"><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://github.com/Turbo87/sidebar-v2" role="tab" target="_blank"><i class="fa fa-github"></i></a></li-->
+            </ul>
+
+            <ul role="tablist">
+                <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="home">
+                <h1 class="sidebar-header">
+                    Camping Maps
+                    <span class="sidebar-open"><i class="fa fa-caret-left"></i></span>
+                </h1>
+
+                <!--p>A responsive sidebar for mapping libraries like <a href="http://leafletjs.com/">Leaflet</a> or <a href="http://openlayers.org/">OpenLayers</a>.</p-->
+
+                <h2>California Camping Map</h2>
+                <h4>Select a month from the layers on the right:</h4>
+                <br>
+                <h4>Average maximum daily temperature (degrees farenheit) from years 1970 - 2000</h4>
+                <br>
+                <img src="http://njander.github.io/img/Legend6ColorRamp.svg" alt="Legend" height="400" width="400">
+                <br>
+                <a href="http://worldclim.org/version2" target="_blank">WorldClim Data</a>
+                <br>
+                <h4>For more information on temperature and camping, feel free to read my write up here: </h4>
+                <a href="https://drive.google.com/file/d/182itMPjZ450roum5vQIFECYYzmcR97gU/view?usp=sharing" target="_blank">Temperature Write-Up</a>
+                <h5>Neal Jander 2018</h5>
+            </div>
+
+            <!--div class="sidebar-pane" id="profile">
+                <h1 class="sidebar-header">Profile<span class="sidebar-open"><i class="fa fa-caret-left"></i></span></h1>
+            </div-->
+
+            <!--div class="sidebar-pane" id="messages">
+                <h1 class="sidebar-header">Messages<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div-->
+
+            <!--div class="sidebar-pane" id="settings">
+                <h1 class="sidebar-header">Settings<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div-->
+        </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
+
+    <!--a href="https://github.com/Turbo87/sidebar-v2/"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a-->
+
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="../js/leaflet-sidebar.js"></script>
+
+    <script type="text/javascript">
+
+      var tiles = L.tileLayer('https://a.tiles.mapbox.com/v4/nps.2yxv8n84/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibnBzIiwiYSI6IkdfeS1OY1UifQ.K8Qn5ojTw4RV1GwBlsci-Q', {
+          maxZoom: 18,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">NPS Park Tiles</a> contributors, Points &copy 2012 LINZ'
+        }),
+        latlng = L.latLng(37.166111, -119.449444);
+
+      var map = L.map('map', {center: latlng, zoom: 6, layers: [tiles]});
+
+      var markers1 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_01_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_01_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      map.addLayer(markers1);
+
+      var markers2 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_02_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_02_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      //map.addLayer(markers2);
+
+      var markers3 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_03_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_03_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      //map.addLayer(markers3);
+
+      var markers4 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_04_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_04_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers5 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_05_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_05_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers6 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_06_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_06_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers7 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_07_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_07_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers8 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_08_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_08_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers9 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_09_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_09_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers10 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_10_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_10_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers11 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_11_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_11_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      var markers12 = L.tileLayer.wms('https://qgiscloud.com/njander/TmaxFullSpectrum_12_Shp1/wms?', {
+        layers: 'TmaxFullSpectrum_12_Shp1',
+        transpareny: 'true',
+        opacity: 0.5,
+      });
+
+      //map.addLayer(markers4);
+
+
+      var overlays = {
+        "January": markers1,
+        "February": markers2,
+        "March": markers3,
+        "April": markers4,
+        "May": markers5,
+        "June": markers6,
+        "July": markers7,
+        "August": markers8,
+        "September": markers9,
+        "October": markers10,
+        "November": markers11,
+        "December": markers12
+
+
+      };
+      L.control.layers(null, overlays).addTo(map);
+      var sidebar = L.control.sidebar('sidebar').addTo(map);
+      sidebar.open('home');
+
+
+
+    </script>
+</body>
+</html>
